@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Friday, November 04, 2016 01:48:10}
+%TCIDATA{LastRevised=Monday, November 14, 2016 22:06:26}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -9299,19 +9299,20 @@ But the polynomial $P$ is monic. Hence, the map%
 \begin{align*}
 \left(  \text{the set of all monic divisors of }P\right)   &  \rightarrow
 \left(  \text{the set of all monic divisors of }P\right)  ,\\
-D  &  \mapsto P/D
+D &  \mapsto P/D
 \end{align*}
 is well-defined and a bijection (actually, it is an involution). Thus, we can
 substitute $P/D$ for $D$ in the sum $\sum_{D\mid P}\varphi\left(  D\right)
 \varphi_{D}\left(  b_{P/D}\right)  $. We thus obtain%
 \begin{align*}
-&  \sum_{D\mid P}\varphi\left(  D\right)  \varphi_{D}\left(  b_{P/D}\right) \\
+&  \sum_{D\mid P}\varphi\left(  D\right)  \varphi_{D}\left(  b_{P/D}\right)
+\\
 &  =\sum_{D\mid P}\varphi\left(  \underbrace{P/D}_{=\dfrac{P}{D}}\right)
 \underbrace{\varphi_{P/D}}_{\substack{=\operatorname*{id}\\\text{(by the
 definition of }\varphi_{P/D}\text{)}}}\left(  \underbrace{b_{P/\left(
 P/D\right)  }}_{\substack{=b_{D}=Q^{q^{\deg D}}\\\text{(by
 (\ref{pf.cor.F.gW.example1.levent.bP=1}), applied}\\\text{to }D\text{ instead
-of }P}}\right) \\
+of }P\text{)}}}\right)  \\
 &  =\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)
 \underbrace{\operatorname*{id}\left(  Q^{q^{\deg D}}\right)  }_{=Q^{q^{\deg
 D}}}=\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)  Q^{q^{\deg D}}.
@@ -9568,6 +9569,7 @@ squarefree}\right) \nonumber\\
 =I\right)  . \label{pf.cor.F.gW.example1.levent.2nd.2}%
 \end{align}
 
+
 Now, we claim the following:
 
 \begin{statement}
@@ -9739,9 +9741,9 @@ Z=\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)  Q^{q^{\deg D}}.
 \]
 Then, for every $\pi\in\operatorname*{PF}P$, we have%
 \begin{align*}
-Z &  =\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)  Q^{q^{\deg D}}%
+Z  &  =\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)  Q^{q^{\deg D}}%
 =\sum_{D\in\mathbf{S}}\mu\left(  D\right)  Q^{q^{\deg\left(  P/D\right)  }%
-}\ \ \ \ \ \ \ \ \ \ \left(  \text{by Observation 3}\right)  \\
+}\ \ \ \ \ \ \ \ \ \ \left(  \text{by Observation 3}\right) \\
 &  \equiv0\operatorname{mod}\pi^{v_{\pi}\left(  P\right)  }\mathbb{F}%
 _{q}\left[  T\right]  \ \ \ \ \ \ \ \ \ \ \left(  \text{by Observation
 6}\right)  ,
