@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Monday, November 14, 2016 22:06:26}
+%TCIDATA{LastRevised=Wednesday, December 07, 2016 21:20:46}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -4973,20 +4973,20 @@ obtain%
 _{\substack{=1\otimes p_{i}\left(  T\right)  =1\otimes p_{i}\\\text{(since
 }p_{i}\left(  T\right)  =p_{i}\text{)}}}\underbrace{\alpha^{i}}%
 _{\substack{=\alpha^{i}\otimes1\\\text{(since }\alpha^{i}\in\mathbb{F}_{\pi
-}\text{)}}}\right)  \left(  1\otimes T-\alpha\right) \\
+}\text{)}}}\right)  \left(  1\otimes T-\alpha\right)  \\
 &  =\left(  \sum_{i=0}^{d-1}\underbrace{\left(  1\otimes p_{i}\right)  \left(
 \alpha^{i}\otimes1\right)  }_{=\alpha^{i}\otimes p_{i}}\right)  \left(
-1\otimes T-\alpha\right) \\
+1\otimes T-\alpha\right)  \\
 &  =\left(  \sum_{i=0}^{d-1}\alpha^{i}\otimes p_{i}\right)  \left(  1\otimes
 T-\alpha\right)
 \end{align*}
-in the ring $\mathcal{F}$. Since $\pi\left(  1\otimes T\right)
--\underbrace{\pi\left(  \alpha\right)  }_{=0}=\pi\left(  1\otimes T\right)
-=1\otimes\underbrace{\pi\left(  T\right)  }_{=\pi}=1\otimes\pi$, this rewrites
-as
+in the ring $\mathcal{F}_{\pi}=\mathbb{F}_{\pi}\otimes\mathcal{F}$. Since
+$\pi\left(  1\otimes T\right)  -\underbrace{\pi\left(  \alpha\right)  }%
+_{=0}=\pi\left(  1\otimes T\right)  =1\otimes\underbrace{\pi\left(  T\right)
+}_{=\pi}=1\otimes\pi$, this rewrites as
 \begin{equation}
 1\otimes\pi=\left(  \sum_{i=0}^{d-1}\alpha^{i}\otimes p_{i}\right)  \left(
-1\otimes T-\alpha\right)  . \label{pf.lem.F.u(pi).lem2.1}%
+1\otimes T-\alpha\right)  .\label{pf.lem.F.u(pi).lem2.1}%
 \end{equation}
 
 
@@ -5289,12 +5289,12 @@ T\right]  $-modules (according to Proposition \ref{prop.q-pol.Fqlin.leftT}).
 Proposition \ref{prop.F.u(pi)} shows that there exists a unique $u\left(
 \pi\right)  \in\mathcal{F}$ such that $\operatorname*{Carl}\pi=F^{\deg\pi}%
 +\pi\cdot u\left(  \pi\right)  $. Consider this $u\left(  \pi\right)  $.
-Corollary \ref{cor.F.carlitz.img}, (applied to $M=\pi$) yields
+Corollary \ref{cor.F.carlitz.img} (applied to $M=\pi$) yields
 \begin{align*}
 \left[  \pi\right]   &  =\operatorname*{Fqpol}\left(
 \underbrace{\operatorname*{Carl}\pi}_{=F^{\deg\pi}+\pi\cdot u\left(
 \pi\right)  }\right)  =\operatorname*{Fqpol}\left(  F^{\deg\pi}+\pi\cdot
-u\left(  \pi\right)  \right) \\
+u\left(  \pi\right)  \right)  \\
 &  =\underbrace{\left(  \operatorname*{Fqpol}\left(  F^{\deg\pi}\right)
 \right)  }_{=X^{q^{\deg\pi}}}+\pi\underbrace{\operatorname*{Fqpol}\left(
 u\left(  \pi\right)  \right)  }_{\in\mathbb{F}_{q}\left[  T\right]  \left[
@@ -5690,7 +5690,6 @@ P^{L}\right)  \right)  a\equiv\left(  \operatorname*{Carl}P\right)  \left(
 \operatorname*{Carl}\left(  P^{L}\right)  \right)  b\operatorname{mod}%
 P^{k+L+1}A. \label{pf.cor.F.lift.lift-Pl.b.1}%
 \end{equation}
-
 
 Now, $\operatorname*{Carl}\left(  \underbrace{P^{L+1}}_{=PP^{L}}\right)
 =\operatorname*{Carl}\left(  PP^{L}\right)  =\left(  \operatorname*{Carl}%
@@ -9299,20 +9298,19 @@ But the polynomial $P$ is monic. Hence, the map%
 \begin{align*}
 \left(  \text{the set of all monic divisors of }P\right)   &  \rightarrow
 \left(  \text{the set of all monic divisors of }P\right)  ,\\
-D &  \mapsto P/D
+D  &  \mapsto P/D
 \end{align*}
 is well-defined and a bijection (actually, it is an involution). Thus, we can
 substitute $P/D$ for $D$ in the sum $\sum_{D\mid P}\varphi\left(  D\right)
 \varphi_{D}\left(  b_{P/D}\right)  $. We thus obtain%
 \begin{align*}
-&  \sum_{D\mid P}\varphi\left(  D\right)  \varphi_{D}\left(  b_{P/D}\right)
-\\
+&  \sum_{D\mid P}\varphi\left(  D\right)  \varphi_{D}\left(  b_{P/D}\right) \\
 &  =\sum_{D\mid P}\varphi\left(  \underbrace{P/D}_{=\dfrac{P}{D}}\right)
 \underbrace{\varphi_{P/D}}_{\substack{=\operatorname*{id}\\\text{(by the
 definition of }\varphi_{P/D}\text{)}}}\left(  \underbrace{b_{P/\left(
 P/D\right)  }}_{\substack{=b_{D}=Q^{q^{\deg D}}\\\text{(by
 (\ref{pf.cor.F.gW.example1.levent.bP=1}), applied}\\\text{to }D\text{ instead
-of }P\text{)}}}\right)  \\
+of }P\text{)}}}\right) \\
 &  =\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)
 \underbrace{\operatorname*{id}\left(  Q^{q^{\deg D}}\right)  }_{=Q^{q^{\deg
 D}}}=\sum_{D\mid P}\varphi\left(  \dfrac{P}{D}\right)  Q^{q^{\deg D}}.
