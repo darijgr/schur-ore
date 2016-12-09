@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Wednesday, December 07, 2016 21:20:46}
+%TCIDATA{LastRevised=Thursday, December 08, 2016 21:58:32}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -4973,10 +4973,10 @@ obtain%
 _{\substack{=1\otimes p_{i}\left(  T\right)  =1\otimes p_{i}\\\text{(since
 }p_{i}\left(  T\right)  =p_{i}\text{)}}}\underbrace{\alpha^{i}}%
 _{\substack{=\alpha^{i}\otimes1\\\text{(since }\alpha^{i}\in\mathbb{F}_{\pi
-}\text{)}}}\right)  \left(  1\otimes T-\alpha\right)  \\
+}\text{)}}}\right)  \left(  1\otimes T-\alpha\right) \\
 &  =\left(  \sum_{i=0}^{d-1}\underbrace{\left(  1\otimes p_{i}\right)  \left(
 \alpha^{i}\otimes1\right)  }_{=\alpha^{i}\otimes p_{i}}\right)  \left(
-1\otimes T-\alpha\right)  \\
+1\otimes T-\alpha\right) \\
 &  =\left(  \sum_{i=0}^{d-1}\alpha^{i}\otimes p_{i}\right)  \left(  1\otimes
 T-\alpha\right)
 \end{align*}
@@ -4986,7 +4986,7 @@ _{=0}=\pi\left(  1\otimes T\right)  =1\otimes\underbrace{\pi\left(  T\right)
 }_{=\pi}=1\otimes\pi$, this rewrites as
 \begin{equation}
 1\otimes\pi=\left(  \sum_{i=0}^{d-1}\alpha^{i}\otimes p_{i}\right)  \left(
-1\otimes T-\alpha\right)  .\label{pf.lem.F.u(pi).lem2.1}%
+1\otimes T-\alpha\right)  . \label{pf.lem.F.u(pi).lem2.1}%
 \end{equation}
 
 
@@ -5294,7 +5294,7 @@ Corollary \ref{cor.F.carlitz.img} (applied to $M=\pi$) yields
 \left[  \pi\right]   &  =\operatorname*{Fqpol}\left(
 \underbrace{\operatorname*{Carl}\pi}_{=F^{\deg\pi}+\pi\cdot u\left(
 \pi\right)  }\right)  =\operatorname*{Fqpol}\left(  F^{\deg\pi}+\pi\cdot
-u\left(  \pi\right)  \right)  \\
+u\left(  \pi\right)  \right) \\
 &  =\underbrace{\left(  \operatorname*{Fqpol}\left(  F^{\deg\pi}\right)
 \right)  }_{=X^{q^{\deg\pi}}}+\pi\underbrace{\operatorname*{Fqpol}\left(
 u\left(  \pi\right)  \right)  }_{\in\mathbb{F}_{q}\left[  T\right]  \left[
@@ -5690,6 +5690,7 @@ P^{L}\right)  \right)  a\equiv\left(  \operatorname*{Carl}P\right)  \left(
 \operatorname*{Carl}\left(  P^{L}\right)  \right)  b\operatorname{mod}%
 P^{k+L+1}A. \label{pf.cor.F.lift.lift-Pl.b.1}%
 \end{equation}
+
 
 Now, $\operatorname*{Carl}\left(  \underbrace{P^{L+1}}_{=PP^{L}}\right)
 =\operatorname*{Carl}\left(  PP^{L}\right)  =\left(  \operatorname*{Carl}%
@@ -7018,20 +7019,23 @@ Let $E$ be a monic divisor of $M$. Then,%
 [Proof of Corollary \ref{cor.moebius-Q.sum-rel}.]We have $\dfrac{M}{E}%
 \in\mathbb{F}_{q}\left[  T\right]  $ (since $E$ is a divisor of $M$).
 Moreover, the polynomial $\dfrac{M}{E}$ is monic (since $M$ and $E$ are
-monic). Hence,$\dfrac{M}{E}\in\mathbb{F}_{q}\left[  T\right]  _{+}$.
+monic). Hence, $\dfrac{M}{E}\in\mathbb{F}_{q}\left[  T\right]  _{+}$.
 Proposition \ref{prop.moebius-Q.sum} (applied to $\dfrac{M}{E}$ instead of
-$M$) thus shows that $\sum_{B\mid\dfrac{M}{E}}\mu\left(  B\right)  =\left[
+$M$) thus shows that $\sum_{D\mid\dfrac{M}{E}}\mu\left(  D\right)  =\left[
 \underbrace{\dfrac{M}{E}=1}_{\substack{\text{This is equivalent to}%
 \\E=M}}\right]  =\left[  E=M\right]  $.
 
 But $E\mid M$. Hence, the monic divisors $B$ of $M$ satisfying $BE\mid M$ are
 exactly the monic divisors $B$ of $\dfrac{M}{E}$. Therefore, $\sum
 _{\substack{B\mid M;\\BE\mid M}}=\sum_{B\mid\dfrac{M}{E}}$. Thus,%
-\[
+\begin{align*}
 \underbrace{\sum_{\substack{B\mid M;\\BE\mid M}}}_{=\sum_{B\mid\dfrac{M}{E}}%
-}\mu\left(  B\right)  =\sum_{B\mid\dfrac{M}{E}}\mu\left(  B\right)  =\left[
-E=M\right]  .
-\]
+}\mu\left(  B\right)   &  =\sum_{B\mid\dfrac{M}{E}}\mu\left(  B\right)
+=\sum_{D\mid\dfrac{M}{E}}\mu\left(  D\right) \\
+&  \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we renamed the summation index
+}B\text{ as }D\right) \\
+&  =\left[  E=M\right]  .
+\end{align*}
 Corollary \ref{cor.moebius-Q.sum-rel} is therefore proven.
 \end{proof}
 
@@ -8479,12 +8483,12 @@ exists a family $\left(  y_{P}\right)  _{P\in N}\in A^{N}$ of elements of $A$
 such that every $P\in N$ satisfies%
 \begin{equation}
 \left(  b_{P}=\sum_{D\mid P}D\varphi_{P/D}\left(  y_{D}\right)  \text{ for
-every }P\in N\right)  . \label{pf.thm.F.gW.FtoE.goal}%
+every }P\in N\right)  .\label{pf.thm.F.gW.FtoE.goal}%
 \end{equation}
 We shall construct such a family $\left(  y_{P}\right)  _{P\in N}$
 recursively, by induction over $\deg P$. That is, we fix some $Q\in N$, and we
-assume that we already have constructed a $y_{P}$ for every $P\in N$
-satisfying $\deg P<\deg Q$; we furthermore assume that these $y_{Q}$ satisfy%
+assume that we already have constructed a $y_{P}\in A$ for every $P\in N$
+satisfying $\deg P<\deg Q$; we furthermore assume that these $y_{P}$ satisfy%
 \begin{equation}
 b_{P}=\sum_{D\mid P}D\varphi_{P/D}\left(  y_{D}\right)
 \label{pf.thm.F.gW.FtoE.indass}%
@@ -8508,7 +8512,7 @@ b_{Q/E}=\sum_{\substack{D\mid Q;\\DE\mid Q}}D\varphi_{\left(  Q/D\right)
 divisor of $Q$ satisfying $E\neq1$. We have $E\mid Q$ and thus $Q/E\in
 \mathbb{F}_{q}\left[  T\right]  $. The polynomial $Q/E$ is monic (since $Q$
 and $E$ are monic) and thus is a monic divisor of $Q\in N$. Hence, $Q/E\in N$
-(since $N$ is a $Q$-nest). Also, $E$ is a monic polynomial satisfying $E\neq
+(since $N$ is a $q$-nest). Also, $E$ is a monic polynomial satisfying $E\neq
 1$; therefore, $\deg E>0$. Hence, $\deg\left(  Q/E\right)  =\deg
 Q-\underbrace{\deg E}_{>0}<\deg Q$. Thus, we can apply
 (\ref{pf.thm.F.gW.FtoE.indass}) to $P=Q/E$ (since we have assumed that
@@ -8550,7 +8554,7 @@ y_{D}\right)  $. This proves (\ref{pf.thm.F.gW.FtoE.3}).}. If $D$ is a monic
 divisor of $Q$, then%
 \begin{equation}
 \sum_{\substack{E\mid Q;\\DE\mid Q;\\E\neq1}}\mu\left(  E\right)  =\left[
-D=Q\right]  -1 \label{pf.thm.F.gW.FtoE.5}%
+D=Q\right]  -1\label{pf.thm.F.gW.FtoE.5}%
 \end{equation}
 \footnote{\textit{Proof of (\ref{pf.thm.F.gW.FtoE.5}):} Let $D$ be a monic
 divisor of $Q$. We must prove (\ref{pf.thm.F.gW.FtoE.5}).
@@ -8571,7 +8575,7 @@ Comparing this with%
 _{\substack{B\mid Q;\\DB\mid Q}}}_{=\sum_{\substack{B\mid Q;\\BD\mid
 Q\\\text{(since }DB=BD\\\text{for every }B\mid Q\text{)}}}}\mu\left(
 B\right)  \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we have renamed the
-summation index }E\text{ as }B\right) \\
+summation index }E\text{ as }B\right)  \\
 &  =\sum_{\substack{B\mid Q;\\BD\mid Q}}\mu\left(  B\right)  =\left[
 D=Q\right]  \ \ \ \ \ \ \ \ \ \ \left(
 \begin{array}
