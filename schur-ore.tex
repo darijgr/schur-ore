@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Thursday, December 08, 2016 21:58:32}
+%TCIDATA{LastRevised=Saturday, December 10, 2016 19:34:27}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -5750,7 +5750,7 @@ If $N=0$, then Corollary \ref{cor.F.lift.lift-all} is easily seen to hold
 Thus, $v_{\pi}\left(  N\right)  \in\mathbb{N}$. Set $\ell=v_{\pi}\left(
 N\right)  $. Then, $\pi^{\ell}\mid N$. In other words, there exists some
 polynomial $M\in\mathbb{F}_{q}\left[  T\right]  $ such that $N=M\pi^{\ell}$.
-Consider this $N$.
+Consider this $M$.
 
 Proposition \ref{prop.F.lift.FPA} \textbf{(b)} (applied to $P=\pi^{1+\ell}$)
 shows that the $\mathbb{F}_{q}$-vector subspace $\pi^{1+\ell}A$ of $A$ is a
@@ -6564,7 +6564,7 @@ _{P}=\varphi_{P}=\varphi_{\pi}\circ\varphi_{P/\pi}$, so that%
 \begin{equation}
 \underbrace{\psi_{P}}_{=\varphi_{\pi}\circ\varphi_{P/\pi}}\left(  a\right)
 =\left(  \varphi_{\pi}\circ\varphi_{P/\pi}\right)  \left(  a\right)
-=\varphi_{\pi}\left(  \psi_{P/\pi}\left(  a\right)  \right)  .
+=\varphi_{\pi}\left(  \varphi_{P/\pi}\left(  a\right)  \right)  .
 \label{pf.prop.F.gW-general.ex3.1}%
 \end{equation}
 On the other hand, the definition of $\psi_{P/\pi}$ yields $\psi_{P/\pi
@@ -8483,7 +8483,7 @@ exists a family $\left(  y_{P}\right)  _{P\in N}\in A^{N}$ of elements of $A$
 such that every $P\in N$ satisfies%
 \begin{equation}
 \left(  b_{P}=\sum_{D\mid P}D\varphi_{P/D}\left(  y_{D}\right)  \text{ for
-every }P\in N\right)  .\label{pf.thm.F.gW.FtoE.goal}%
+every }P\in N\right)  . \label{pf.thm.F.gW.FtoE.goal}%
 \end{equation}
 We shall construct such a family $\left(  y_{P}\right)  _{P\in N}$
 recursively, by induction over $\deg P$. That is, we fix some $Q\in N$, and we
@@ -8554,7 +8554,7 @@ y_{D}\right)  $. This proves (\ref{pf.thm.F.gW.FtoE.3}).}. If $D$ is a monic
 divisor of $Q$, then%
 \begin{equation}
 \sum_{\substack{E\mid Q;\\DE\mid Q;\\E\neq1}}\mu\left(  E\right)  =\left[
-D=Q\right]  -1\label{pf.thm.F.gW.FtoE.5}%
+D=Q\right]  -1 \label{pf.thm.F.gW.FtoE.5}%
 \end{equation}
 \footnote{\textit{Proof of (\ref{pf.thm.F.gW.FtoE.5}):} Let $D$ be a monic
 divisor of $Q$. We must prove (\ref{pf.thm.F.gW.FtoE.5}).
@@ -8575,7 +8575,7 @@ Comparing this with%
 _{\substack{B\mid Q;\\DB\mid Q}}}_{=\sum_{\substack{B\mid Q;\\BD\mid
 Q\\\text{(since }DB=BD\\\text{for every }B\mid Q\text{)}}}}\mu\left(
 B\right)  \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we have renamed the
-summation index }E\text{ as }B\right)  \\
+summation index }E\text{ as }B\right) \\
 &  =\sum_{\substack{B\mid Q;\\BD\mid Q}}\mu\left(  B\right)  =\left[
 D=Q\right]  \ \ \ \ \ \ \ \ \ \ \left(
 \begin{array}
