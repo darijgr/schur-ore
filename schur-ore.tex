@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Saturday, December 10, 2016 19:34:27}
+%TCIDATA{LastRevised=Sunday, December 18, 2016 21:09:42}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -3490,7 +3490,7 @@ complement $W$ to the subspace $U$ of $V$ (such a complement exists by one of
 the basic theorems of linear algebra). Then, $W$ is an $\mathbb{F}_{q}$-vector
 subspace of $V$ satisfying $U\oplus W=V$. We shall identify $V$ with the
 \textbf{external} direct sum of $U$ and $W$ (that is, we shall identify each
-element of $v$ with the unique pair $\left(  u,w\right)  \in U\times W$
+element $v$ of $V$ with the unique pair $\left(  u,w\right)  \in U\times W$
 satisfying $v=u+w$). Thus, the $\mathbb{F}_{q}$-linear map $\varphi
 :V\rightarrow A$ can be regarded as an $\mathbb{F}_{q}$-linear map
 $\varphi:U\oplus W\rightarrow A$.
@@ -3520,12 +3520,12 @@ W=\underbrace{\dim V}_{=N+1}-\underbrace{\dim U}_{=1}=N+1-1=N$. Thus,
 applied to $W$ and $\psi$ instead of $V$ and $\varphi$. As a consequence, we
 obtain that $f_{W,\psi}$ is a $q$-polynomial. In other words, $f_{W,\psi}\in
 A\left[  X\right]  _{q-\operatorname*{lin}}$. Thus, Proposition
-\ref{prop.q-pol.A-q-lin} (applied to $f=f_{W,q}$ and $B=A$) shows that the map
-$A\rightarrow A,\ b\mapsto f_{W,q}\left(  b\right)  $ is $\mathbb{F}_{q}%
-$-linear. Let us denote this map by $h$. Thus, $h$ is the map $A\rightarrow
-A,\ b\mapsto f_{W,q}\left(  b\right)  $, and is $\mathbb{F}_{q}$-linear. Every
-$a\in A$ satisfies $h\left(  a\right)  =f_{W,\psi}\left(  a\right)  $ (by the
-definition of $h$).
+\ref{prop.q-pol.A-q-lin} (applied to $f=f_{W,\psi}$ and $B=A$) shows that the
+map $A\rightarrow A,\ b\mapsto f_{W,\psi}\left(  b\right)  $ is $\mathbb{F}%
+_{q}$-linear. Let us denote this map by $h$. Thus, $h$ is the map
+$A\rightarrow A,\ b\mapsto f_{W,\psi}\left(  b\right)  $, and is
+$\mathbb{F}_{q}$-linear. Every $a\in A$ satisfies $h\left(  a\right)
+=f_{W,\psi}\left(  a\right)  $ (by the definition of $h$).
 
 Now, Lemma \ref{lem.mac1.too-early} (applied to $U$, $\gamma$ and $\varphi$
 instead of $V$, $\varphi$ and $\chi$) shows that $f_{U\oplus W,\varphi
@@ -5343,7 +5343,7 @@ This proves Corollary \ref{cor.F.u(pi).mod}.
 Next, we shall show a series of simple propositions which will culminate (if
 this can be called a culmination) in a Carlitz analogue of the classical
 \textquotedblleft lifting the exponent\textquotedblright\ theorem (see, e.g.,
-\cite[version with solution (ancillary file), (12.349)]{reiner-hopf} for it).
+\cite[version with solutions (ancillary file), (12.349)]{reiner-hopf} for it).
 
 \begin{proposition}
 \label{prop.F.lift.CarlP-P}\textbf{(a)} The $\mathbb{F}_{q}$-vector subspace
@@ -5616,12 +5616,11 @@ Corollary \ref{cor.F.lift.lift-Pl} \textbf{(a)} by induction over $\ell$:
 \textit{Induction base:} We have $\deg\underbrace{\left(  P^{0}\right)  }%
 _{=1}=\deg1=0$ and thus $F^{\deg\left(  P^{0}\right)  }=F^{0}=1$. Hence,
 $F^{\deg\left(  P^{0}\right)  }a=1a=a$ and similarly $F^{\deg\left(
-P^{0}\right)  }b=b$. But $a\equiv b\operatorname{mod}P^{k}A$. Since
-$k+\underbrace{0}_{=0}=k$, this rewrites as $a\equiv b\operatorname{mod}%
-P^{k+0}A$. Now, $F^{\deg\left(  P^{0}\right)  }a=a\equiv b=F^{\deg\left(
-P^{0}\right)  }b\operatorname{mod}P^{k+0}A$. In other words, Corollary
-\ref{cor.F.lift.lift-Pl} \textbf{(a)} holds for $\ell=0$. This completes the
-induction base.
+P^{0}\right)  }b=b$. But $a\equiv b\operatorname{mod}P^{k}A$. Since $k+0=k$,
+this rewrites as $a\equiv b\operatorname{mod}P^{k+0}A$. Now, $F^{\deg\left(
+P^{0}\right)  }a=a\equiv b=F^{\deg\left(  P^{0}\right)  }b\operatorname{mod}%
+P^{k+0}A$. In other words, Corollary \ref{cor.F.lift.lift-Pl} \textbf{(a)}
+holds for $\ell=0$. This completes the induction base.
 
 \textit{Induction step:} Let $L\in\mathbb{N}$. Assume that Corollary
 \ref{cor.F.lift.lift-Pl} \textbf{(a)} holds for $\ell=L$. We must now prove
@@ -5663,9 +5662,9 @@ P^{0}\right)  }_{=1}=\operatorname*{Carl}1=1$ (since $\operatorname*{Carl}$ is
 an $\mathbb{F}_{q}$-algebra homomorphism). Hence, $\left(
 \operatorname*{Carl}\left(  P^{0}\right)  \right)  a=1a=a$ and similarly
 $\left(  \operatorname*{Carl}\left(  P^{0}\right)  \right)  b=b$. But $a\equiv
-b\operatorname{mod}P^{k}A$. Since $k+\underbrace{0}_{=0}=k$, this rewrites as
-$a\equiv b\operatorname{mod}P^{k+0}A$. Now, $\left(  \operatorname*{Carl}%
-\left(  P^{0}\right)  \right)  a=a\equiv b=\left(  \operatorname*{Carl}\left(
+b\operatorname{mod}P^{k}A$. Since $k+0=k$, this rewrites as $a\equiv
+b\operatorname{mod}P^{k+0}A$. Now, $\left(  \operatorname*{Carl}\left(
+P^{0}\right)  \right)  a=a\equiv b=\left(  \operatorname*{Carl}\left(
 P^{0}\right)  \right)  b\operatorname{mod}P^{k+0}A$. In other words, Corollary
 \ref{cor.F.lift.lift-Pl} \textbf{(b)} holds for $\ell=0$. This completes the
 induction base.
@@ -5818,7 +5817,7 @@ N\right)  a\equiv\left(  \operatorname*{Carl}N\right)  b\operatorname{mod}%
 
 Each of the two parts of Corollary \ref{cor.F.lift.lift-all} can be viewed as
 an analogue of the classical \textquotedblleft exponent lifting
-lemma\textquotedblright\ \cite[version with solution (ancillary file),
+lemma\textquotedblright\ \cite[version with solutions (ancillary file),
 (12.349)]{reiner-hopf}.
 
 \subsection{The Chinese Remainder Theorem}
