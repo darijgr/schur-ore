@@ -16,6 +16,6 @@ structure behind it is in sight).
 
 Up-to-date PDF files can be downloaded from my website:
 
-- [Do the symmetric functions have a function-field analogue?](http://web.mit.edu/~darij/www/algebra/schur-ore.pdf).
+- [Do the symmetric functions have a function-field analogue?](http://www.cip.ifi.lmu.de/~grinberg/algebra/schur-ore.pdf).
 
 -- Darij Grinberg (*firstname***lastname**@gmail.com)
