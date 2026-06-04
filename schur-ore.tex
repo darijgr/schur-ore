@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Monday, September 11, 2017 20:30:30}
+%TCIDATA{LastRevised=Sunday, April 12, 2026 01:03:16}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -580,19 +580,19 @@ A\right)  $. I will follow \cite{rabinoff-witt} most of the time.
 \begin{theorem}
 \label{thm.Witt.frob}Let $N$ be a nest.
 
-\textbf{(a)} Let $m$ be a positive integer such that every $n\in N$ satisfies
-$mn\in N$. Then, there exists a unique natural transformation $\mathbf{f}%
-_{m}:W_{N}\rightarrow W_{N}$ of \textbf{set-valued} (not ring-valued) functors
-such that any commutative ring $A$ and any $\mathbf{x}\in W_{N}\left(
-A\right)  $ satisfy%
+\begin{enumerate}
+\item[\textbf{(a)}] Let $m$ be a positive integer such that every $n\in N$
+satisfies $mn\in N$. Then, there exists a unique natural transformation
+$\mathbf{f}_{m}:W_{N}\rightarrow W_{N}$ of \textbf{set-valued} (not
+ring-valued) functors such that any commutative ring $A$ and any
+$\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
 \[
 w_{N}\left(  \mathbf{f}_{m}\left(  \mathbf{x}\right)  \right)  =\left(
-mn\text{-th coordinate of }w_{N}\left(  \mathbf{x}\right)  \right)  _{n\in
-N},
+mn\text{-th coordinate of }w_{N}\left(  \mathbf{x}\right)  \right)  _{n\in N},
 \]
 where $\mathbf{f}_{m}$ is short for $\mathbf{f}_{m}\left(  A\right)  $.
 
-\textbf{(b)} This natural transformation $\mathbf{f}_{m}$ is actually a
+\item[\textbf{(b)}] This natural transformation $\mathbf{f}_{m}$ is actually a
 natural transformation $W_{N}\rightarrow W_{N}$ of \textbf{ring-valued}
 functors as well. That is, $\mathbf{f}_{m}:W_{N}\left(  A\right)  \rightarrow
 W_{N}\left(  A\right)  $ is a ring homomorphism for every commutative ring
@@ -600,14 +600,15 @@ $A$. (Here, again, $\mathbf{f}_{m}$ stands short for $\mathbf{f}_{m}\left(
 A\right)  $.) We call $\mathbf{f}_{m}$ the $m$\textit{-th Frobenius} on
 $W_{N}$.
 
-\textbf{(c)} We have $\mathbf{f}_{1}=\operatorname*{id}$. Any two positive
-integers $n$ and $m$ such that $\mathbf{f}_{n}$ and $\mathbf{f}_{m}$ are
-well-defined satisfy $\mathbf{f}_{n}\circ\mathbf{f}_{m}=\mathbf{f}_{nm}$.
+\item[\textbf{(c)}] We have $\mathbf{f}_{1}=\operatorname*{id}$. Any two
+positive integers $n$ and $m$ such that $\mathbf{f}_{n}$ and $\mathbf{f}_{m}$
+are well-defined satisfy $\mathbf{f}_{n}\circ\mathbf{f}_{m}=\mathbf{f}_{nm}$.
 
-\textbf{(d)} Let $p$ be a prime such that every $n\in N$ satisfies $pn\in N$.
-We have $\mathbf{f}_{p}\left(  \mathbf{x}\right)  \equiv\mathbf{x}%
-^{p}\operatorname{mod}p$ (in $W_{N}\left(  A\right)  $) for every commutative
-ring $A$ and every $\mathbf{x}\in W_{N}\left(  A\right)  $.
+\item[\textbf{(d)}] Let $p$ be a prime such that every $n\in N$ satisfies
+$pn\in N$. We have $\mathbf{f}_{p}\left(  \mathbf{x}\right)  \equiv
+\mathbf{x}^{p}\operatorname{mod}p$ (in $W_{N}\left(  A\right)  $) for every
+commutative ring $A$ and every $\mathbf{x}\in W_{N}\left(  A\right)  $.
+\end{enumerate}
 \end{theorem}
 
 In one or the other form, Theorem \ref{thm.Witt.frob} appears in most sources
@@ -647,7 +648,8 @@ Here is the definition of Verschiebung (\cite[Theorem 5.5 and Proposition
 \begin{theorem}
 \label{thm.Witt.ver}Let $N$ be a nest.
 
-\textbf{(a)} Let $m$ be a positive integer. Then, there exists a unique
+\begin{enumerate}
+\item[\textbf{(a)}] Let $m$ be a positive integer. Then, there exists a unique
 natural transformation $\mathbf{V}_{m}:W_{N}\rightarrow W_{N}$ of
 \textbf{set-valued} (not ring-valued) functors such that any commutative ring
 $A$ and any $\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
@@ -662,7 +664,7 @@ m\cdot\left(  \dfrac{n}{m}\text{-th coordinate of }w_{N}\left(  \mathbf{x}%
 \]
 where $\mathbf{V}_{m}$ is short for $\mathbf{V}_{m}\left(  A\right)  $.
 
-\textbf{(b)} This natural transformation $\mathbf{V}_{m}$ is actually a
+\item[\textbf{(b)}] This natural transformation $\mathbf{V}_{m}$ is actually a
 natural transformation $W_{N}\rightarrow W_{N}$ of
 \textbf{abelian-group-valued} functors as well. More precisely, $\mathbf{V}%
 _{m}:W_{N}\left(  A\right)  \rightarrow W_{N}\left(  A\right)  $ is a
@@ -670,18 +672,19 @@ homomorphism of additive groups for every commutative ring $A$. (Here, again,
 $\mathbf{V}_{m}$ stands short for $\mathbf{V}_{m}\left(  A\right)  $.) We call
 $\mathbf{V}_{m}$ the $m$\textit{-th Verschiebung} on $W_{N}$.
 
-\textbf{(c)} We have $\mathbf{V}_{1}=\operatorname*{id}$. Any two positive
-integers $n$ and $m$ satisfy $\mathbf{V}_{n}\circ\mathbf{V}_{m}=\mathbf{V}%
-_{nm}$.
+\item[\textbf{(c)}] We have $\mathbf{V}_{1}=\operatorname*{id}$. Any two
+positive integers $n$ and $m$ satisfy $\mathbf{V}_{n}\circ\mathbf{V}%
+_{m}=\mathbf{V}_{nm}$.
 
-\textbf{(d)} Actually, $\mathbf{V}_{m}\left(  \left(  x_{n}\right)  _{n\in
-N}\right)  =\left(
+\item[\textbf{(d)}] Actually, $\mathbf{V}_{m}\left(  \left(  x_{n}\right)
+_{n\in N}\right)  =\left(
 \begin{cases}
 x_{n/m}, & \text{if }m\mid n;\\
 0, & \text{if }m\nmid n
 \end{cases}
 \right)  _{n\in N}$ for any positive integer $m$, any commutative ring $A$ and
 any $\left(  x_{n}\right)  _{n\in N}\in W_{N}\left(  A\right)  $.
+\end{enumerate}
 \end{theorem}
 
 There are some equalities involving $\mathbf{V}_{m}$ and $\mathbf{f}_{m}$
@@ -698,10 +701,11 @@ understand its relation to the usual Artin-Hasse exponential...}
 \label{thm.Witt.AH}Let $N$ be a nest. Assume that $nm\in N$ for all $n\in N$
 and $m\in N$.
 
-\textbf{(a)} There exists a unique natural transformation $\operatorname*{AH}%
-:W_{N}\rightarrow W_{N}\circ W_{N}$ (of functors $\mathbf{CRing}%
-\rightarrow\mathbf{CRing}$) such that every commutative ring $A$, every $n\in
-N$ and every $\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
+\begin{enumerate}
+\item[\textbf{(a)}] There exists a unique natural transformation
+$\operatorname*{AH}:W_{N}\rightarrow W_{N}\circ W_{N}$ (of functors
+$\mathbf{CRing}\rightarrow\mathbf{CRing}$) such that every commutative ring
+$A$, every $n\in N$ and every $\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
 \[
 \left(  n\text{-th coordinate of }w_{N}\left(  \operatorname*{AH}\left(
 \mathbf{x}\right)  \right)  \right)  =\mathbf{f}_{n}\left(  \mathbf{x}\right)
@@ -711,11 +715,12 @@ evaluated at the ring $W_{N}\left(  A\right)  $; thus, $w_{N}\left(
 \operatorname*{AH}\left(  \mathbf{x}\right)  \right)  $ is an element of
 $\left(  W_{N}\left(  A\right)  \right)  ^{N}$).
 
-\textbf{(b)} Let $n\in N$, and let $A$ be a commutative ring. Let $w_{n}%
-:W_{N}\left(  A\right)  \rightarrow A$ be the map sending each $\mathbf{x}\in
-W_{N}\left(  A\right)  $ to the $n$-th coordinate of $w_{N}\left(
-\mathbf{x}\right)  $. Then, $W_{N}\left(  w_{n}\right)  \circ
-\operatorname*{AH}=\mathbf{f}_{n}$.
+\item[\textbf{(b)}] Let $n\in N$, and let $A$ be a commutative ring. Let
+$w_{n}:W_{N}\left(  A\right)  \rightarrow A$ be the map sending each
+$\mathbf{x}\in W_{N}\left(  A\right)  $ to the $n$-th coordinate of
+$w_{N}\left(  \mathbf{x}\right)  $. Then, $W_{N}\left(  w_{n}\right)
+\circ\operatorname*{AH}=\mathbf{f}_{n}$.
+\end{enumerate}
 \end{theorem}
 
 \subsection{The Carlitz ghost-Witt equivalence theorem}
@@ -1060,8 +1065,9 @@ triangle with $w_{N}$ and $\widetilde{w}_{N}$.
 
 This is again proven using Theorem \ref{thm.carlitz.gW} and universal polynomials.
 
-The following theorem allows us to prove functorial identities by working with
-ghost components:
+As usual, let $\mathbb{F}_{q}\left(  T\right)  $ denote the fraction field of
+$\mathbb{F}_{q}\left[  T\right]  $. The following theorem allows us to prove
+functorial identities by working with ghost components:
 
 \begin{theorem}
 \label{thm.carlitz.Witt.iso}Let $N$ be a $q$-nest. For any commutative
@@ -1102,20 +1108,20 @@ What about Frobenius operations?
 \begin{theorem}
 \label{thm.carlitz.Witt.frob}Let $N$ be a $q$-nest.
 
-\textbf{(a)} Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$ be such that every
-$P\in N$ satisfies $MP\in N$. Then, there exists a unique natural
+\begin{enumerate}
+\item[\textbf{(a)}] Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$ be such
+that every $P\in N$ satisfies $MP\in N$. Then, there exists a unique natural
 transformation $\mathbf{f}_{M}:W_{N}\rightarrow W_{N}$ of \textbf{set-valued}
 (not $\mathbb{F}_{q}\left[  T\right]  $-algebra-valued) functors such that any
 commutative $\mathbb{F}_{q}\left[  T\right]  $-algebra $A$ and any
 $\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
 \[
 w_{N}\left(  \mathbf{f}_{M}\left(  \mathbf{x}\right)  \right)  =\left(
-MP\text{-th coordinate of }w_{N}\left(  \mathbf{x}\right)  \right)  _{P\in
-N},
+MP\text{-th coordinate of }w_{N}\left(  \mathbf{x}\right)  \right)  _{P\in N},
 \]
 where $\mathbf{f}_{M}$ is short for $\mathbf{f}_{M}\left(  A\right)  $.
 
-\textbf{(b)} This natural transformation $\mathbf{f}_{M}$ is actually a
+\item[\textbf{(b)}] This natural transformation $\mathbf{f}_{M}$ is actually a
 natural transformation $W_{N}\rightarrow W_{N}$ of $\mathbb{F}_{q}\left[
 T\right]  $\textbf{-algebra-valued} functors as well. That is, $\mathbf{f}%
 _{M}:W_{N}\left(  A\right)  \rightarrow W_{N}\left(  A\right)  $ is an
@@ -1124,17 +1130,18 @@ $\mathbb{F}_{q}\left[  T\right]  $-algebra $A$. (Here, again, $\mathbf{f}_{M}$
 stands short for $\mathbf{f}_{M}\left(  A\right)  $.) We call $\mathbf{f}_{M}$
 the $M$\textit{-th Frobenius} on $W_{N}$.
 
-\textbf{(c)} We have $\mathbf{f}_{1}=\operatorname*{id}$. Any $P\in
-\mathbb{F}_{q}\left[  T\right]  _{+}$ and $Q\in\mathbb{F}_{q}\left[  T\right]
-_{+}$ such that $\mathbf{f}_{P}$ and $\mathbf{f}_{Q}$ are well-defined satisfy
-$\mathbf{f}_{P}\circ\mathbf{f}_{Q}=\mathbf{f}_{PQ}$.
+\item[\textbf{(c)}] We have $\mathbf{f}_{1}=\operatorname*{id}$. Any
+$P\in\mathbb{F}_{q}\left[  T\right]  _{+}$ and $Q\in\mathbb{F}_{q}\left[
+T\right]  _{+}$ such that $\mathbf{f}_{P}$ and $\mathbf{f}_{Q}$ are
+well-defined satisfy $\mathbf{f}_{P}\circ\mathbf{f}_{Q}=\mathbf{f}_{PQ}$.
 
-\textbf{(d)} Let $\pi\in\mathbb{F}_{q}\left[  T\right]  $ be a monic
+\item[\textbf{(d)}] Let $\pi\in\mathbb{F}_{q}\left[  T\right]  $ be a monic
 irreducible such that every $P\in N$ satisfies $\pi P\in N$. We have
 $\mathbf{f}_{\pi}\left(  \mathbf{x}\right)  \equiv\left[  \pi\right]  \left(
 \mathbf{x}\right)  \operatorname{mod}\pi W_{N}\left(  A\right)  $ (in
 $W_{N}\left(  A\right)  $) for every commutative $\mathbb{F}_{q}\left[
 T\right]  $-algebra $A$ and every $\mathbf{x}\in W_{N}\left(  A\right)  $.
+\end{enumerate}
 \end{theorem}
 
 \begin{corollary}
@@ -1146,8 +1153,7 @@ W_{N}\left(  A\right)  $ satisfying (\ref{eq.thm.carlitz.Witt.frob.au.phi}).
 Consider this $\varphi$. Let $M\in N$ be such that every $P\in N$ satisfies
 $MP\in N$. Then,%
 \[
-\varphi\circ\sigma_{M}=\mathbf{f}_{M}\circ\varphi\ \ \ \ \ \ \ \ \ \ \text{for
-every }M\in N.
+\varphi\circ\sigma_{M}=\mathbf{f}_{M}\circ\varphi.
 \]
 
 \end{corollary}
@@ -1169,7 +1175,7 @@ homomorphism. Then, there exists a unique $\mathbb{F}_{q}\left[  T\right]
 $-algebra homomorphism $G:A\rightarrow W_{N}\left(  B\right)  $ with the
 properties that $w_{1}\circ G=g$ and that%
 \[
-G\circ\sigma_{M}=\mathbf{f}_{M}\circ g\ \ \ \ \ \ \ \ \ \ \text{for every
+G\circ\sigma_{M}=\mathbf{f}_{M}\circ G\ \ \ \ \ \ \ \ \ \ \text{for every
 }M\in N.
 \]
 This $G$ can be constructed as follows: Theorem \ref{thm.carlitz.Witt.frob.au}
@@ -1188,11 +1194,13 @@ A Verschiebung exists too:
 \begin{theorem}
 \label{thm.carlitz.Witt.ver}Let $N$ be a $q$-nest.
 
-\textbf{(a)} Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$. Then, there
-exists a unique natural transformation $\mathbf{V}_{M}:W_{N}\rightarrow W_{N}$
-of \textbf{set-valued} (not $\mathbb{F}_{q}\left[  T\right]  $-algebra-valued)
-functors such that any commutative $\mathbb{F}_{q}\left[  T\right]  $-algebra
-$A$ and any $\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
+\begin{enumerate}
+\item[\textbf{(a)}] Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$. Then,
+there exists a unique natural transformation $\mathbf{V}_{M}:W_{N}\rightarrow
+W_{N}$ of \textbf{set-valued} (not $\mathbb{F}_{q}\left[  T\right]
+$-algebra-valued) functors such that any commutative $\mathbb{F}_{q}\left[
+T\right]  $-algebra $A$ and any $\mathbf{x}\in W_{N}\left(  A\right)  $
+satisfy%
 \[
 w_{N}\left(  \mathbf{V}_{M}\left(  \mathbf{x}\right)  \right)  =\left(
 \begin{cases}
@@ -1204,7 +1212,7 @@ M\cdot\left(  \dfrac{P}{M}\text{-th coordinate of }w_{N}\left(  \mathbf{x}%
 \]
 where $\mathbf{V}_{M}$ is short for $\mathbf{V}_{M}\left(  A\right)  $.
 
-\textbf{(b)} This natural transformation $\mathbf{V}_{M}$ is actually a
+\item[\textbf{(b)}] This natural transformation $\mathbf{V}_{M}$ is actually a
 natural transformation $W_{N}\rightarrow W_{N}$ of
 \textbf{abelian-group-valued} functors as well. More precisely, $\mathbf{V}%
 _{M}:W_{N}\left(  A\right)  \rightarrow W_{N}\left(  A\right)  $ is a
@@ -1213,19 +1221,20 @@ T\right]  $-algebra $A$. (Here, again, $\mathbf{V}_{M}$ stands short for
 $\mathbf{V}_{M}\left(  A\right)  $.) We call $\mathbf{V}_{M}$ the
 $M$\textit{-th Verschiebung} on $W_{N}$.
 
-\textbf{(c)} We have $\mathbf{V}_{1}=\operatorname*{id}$. Any two
+\item[\textbf{(c)}] We have $\mathbf{V}_{1}=\operatorname*{id}$. Any two
 $P\in\mathbb{F}_{q}\left[  T\right]  _{+}$ and $Q\in\mathbb{F}_{q}\left[
 T\right]  _{+}$ satisfy $\mathbf{V}_{P}\circ\mathbf{V}_{Q}=\mathbf{V}_{PQ}$.
 
-\textbf{(d)} Actually, $\mathbf{V}_{M}\left(  \left(  x_{P}\right)  _{P\in
-N}\right)  =\left(
+\item[\textbf{(d)}] Actually, $\mathbf{V}_{M}\left(  \left(  x_{P}\right)
+_{P\in N}\right)  =\left(
 \begin{cases}
 x_{P/M}, & \text{if }M\mid P;\\
 0, & \text{if }M\nmid P
 \end{cases}
-\right)  _{P\in N}$ for any $P\in\mathbb{F}_{q}\left[  T\right]  _{+}$, any
+\right)  _{P\in N}$ for any $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$, any
 commutative $\mathbb{F}_{q}\left[  T\right]  $-algebra $A$ and any $\left(
 x_{P}\right)  _{P\in N}\in W_{N}\left(  A\right)  $.
+\end{enumerate}
 \end{theorem}
 
 And here is a Carlitz analogue of the Artin-Hasse exponential:
@@ -1234,12 +1243,13 @@ And here is a Carlitz analogue of the Artin-Hasse exponential:
 \label{thm.carlitz.Witt.AH}Let $N$ be a $q$-nest. Assume that $PQ\in N$ for
 all $P\in N$ and $Q\in N$.
 
-\textbf{(a)} There exists a unique natural transformation $\operatorname*{AH}%
-:W_{N}\rightarrow W_{N}\circ W_{N}$ (of functors $\mathbf{CRing}%
-_{\mathbb{F}_{q}\left[  T\right]  }\rightarrow\mathbf{CRing}_{\mathbb{F}%
-_{q}\left[  T\right]  }$) such that every commutative $\mathbb{F}_{q}\left[
-T\right]  $-algebra $A$, every $P\in N$ and every $\mathbf{x}\in W_{N}\left(
-A\right)  $ satisfy%
+\begin{enumerate}
+\item[\textbf{(a)}] There exists a unique natural transformation
+$\operatorname*{AH}:W_{N}\rightarrow W_{N}\circ W_{N}$ (of functors
+$\mathbf{CRing}_{\mathbb{F}_{q}\left[  T\right]  }\rightarrow\mathbf{CRing}%
+_{\mathbb{F}_{q}\left[  T\right]  }$) such that every commutative
+$\mathbb{F}_{q}\left[  T\right]  $-algebra $A$, every $P\in N$ and every
+$\mathbf{x}\in W_{N}\left(  A\right)  $ satisfy%
 \[
 \left(  P\text{-th coordinate of }w_{N}\left(  \operatorname*{AH}\left(
 \mathbf{x}\right)  \right)  \right)  =\mathbf{f}_{P}\left(  \mathbf{x}\right)
@@ -1249,11 +1259,12 @@ evaluated at the $\mathbb{F}_{q}\left[  T\right]  $-algebra $W_{N}\left(
 A\right)  $; thus, $w_{N}\left(  \operatorname*{AH}\left(  \mathbf{x}\right)
 \right)  $ is an element of $\left(  W_{N}\left(  A\right)  \right)  ^{N}$).
 
-\textbf{(b)} Let $P\in N$, and let $A$ be a commutative $\mathbb{F}_{q}\left[
-T\right]  $-algebra. Let $w_{P}:W_{N}\left(  A\right)  \rightarrow A$ be the
-map sending each $\mathbf{x}\in W_{N}\left(  A\right)  $ to the $P$-th
-coordinate of $w_{N}\left(  \mathbf{x}\right)  $. Then, $W_{N}\left(
+\item[\textbf{(b)}] Let $P\in N$, and let $A$ be a commutative $\mathbb{F}%
+_{q}\left[  T\right]  $-algebra. Let $w_{P}:W_{N}\left(  A\right)  \rightarrow
+A$ be the map sending each $\mathbf{x}\in W_{N}\left(  A\right)  $ to the
+$P$-th coordinate of $w_{N}\left(  \mathbf{x}\right)  $. Then, $W_{N}\left(
 w_{P}\right)  \circ\operatorname*{AH}=\mathbf{f}_{P}$.
+\end{enumerate}
 \end{theorem}
 
 \subsection{\label{subsect.F}$\mathcal{F}$-modules}
@@ -1465,35 +1476,39 @@ F\right]  $-bimodule structure on $\mathcal{M}$). (However, in general,
 $\mathcal{M}$ is neither a $\mathbb{K}\left[  T\right]  $-algebra nor a
 $\mathbb{K}\left[  F\right]  $-algebra.)
 
-\textbf{(a)} We have $F^{a}T^{b}=T^{r^{a}b}F^{a}$ in $\mathcal{M}$ for every
-$a\in\mathbb{N}$ and $b\in\mathbb{N}$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $F^{a}T^{b}=T^{r^{a}b}F^{a}$ in $\mathcal{M}$ for
+every $a\in\mathbb{N}$ and $b\in\mathbb{N}$.
 
-\textbf{(b)} The $\mathbb{K}$-module $\mathcal{M}$ is free with basis $\left(
-T^{j}F^{i}\right)  _{i\geq0,\ j\geq0}$.
+\item[\textbf{(b)}] The $\mathbb{K}$-module $\mathcal{M}$ is free with basis
+$\left(  T^{j}F^{i}\right)  _{i\geq0,\ j\geq0}$.
 
-\textbf{(c)} As left $\mathbb{K}\left[  T\right]  $-module, $\mathcal{M}$ is
-free with basis $\left(  F^{i}\right)  _{i\geq0}$.
+\item[\textbf{(c)}] As left $\mathbb{K}\left[  T\right]  $-module,
+$\mathcal{M}$ is free with basis $\left(  F^{i}\right)  _{i\geq0}$.
 
-\textbf{(d)} As right $\mathbb{K}\left[  T\right]  $-module, $\mathcal{M}$ is
-free with basis $\left(  T^{j}F^{i}\right)  _{i\geq0,\ 0\leq j<r^{i}}$.
+\item[\textbf{(d)}] As right $\mathbb{K}\left[  T\right]  $-module,
+$\mathcal{M}$ is free with basis $\left(  T^{j}F^{i}\right)  _{i\geq0,\ 0\leq
+j<r^{i}}$.
 
-\textbf{(e)} As right $\mathbb{K}\left[  F\right]  $-module, $\mathcal{M}$ is
-free with basis $\left(  T^{j}\right)  _{j\geq0}$.
+\item[\textbf{(e)}] As right $\mathbb{K}\left[  F\right]  $-module,
+$\mathcal{M}$ is free with basis $\left(  T^{j}\right)  _{j\geq0}$.
 
-\textbf{(f)} As left $\mathbb{K}\left[  F\right]  $-module, $\mathcal{M}$ is
-free with basis $\left(  T^{j}F^{i}\right)  _{i=0\text{ or }r\nmid j}$.
+\item[\textbf{(f)}] As left $\mathbb{K}\left[  F\right]  $-module,
+$\mathcal{M}$ is free with basis $\left(  T^{j}F^{i}\right)  _{i=0\text{ or
+}r\nmid j}$.
 
-\textbf{(g)} As $\mathbb{K}\left[  F\right]  $-$\mathbb{K}\left[  T\right]
-$-bimodule, $\mathcal{M}$ is free with basis $\left(  T^{j}F^{i}\right)
-_{\left(  i=0\text{ or }r\nmid j\right)  \text{ and }0\leq j<r^{i}}$ (that is,
-we have $\mathcal{M}=\bigoplus\limits_{\substack{\left(  i,j\right)
-\in\mathbb{N}^{2};\\\left(  i=0\text{ or }r\nmid j\right)  \text{ and }0\leq
-j<r^{i}}}\mathbb{K}\left[  F\right]  \cdot\left(  T^{j}F^{i}\right)
-\cdot\mathbb{K}\left[  T\right]  $, and each $\mathbb{K}\left[  F\right]
-\cdot\left(  T^{j}F^{i}\right)  \cdot\mathbb{K}\left[  T\right]  $ is
-isomorphic to $\mathbb{K}\left[  F\right]  \otimes\mathbb{K}\left[  T\right]
-$ as an $\mathbb{K}\left[  F\right]  $-$\mathbb{K}\left[  T\right]
+\item[\textbf{(g)}] As $\mathbb{K}\left[  F\right]  $-$\mathbb{K}\left[
+T\right]  $-bimodule, $\mathcal{M}$ is free with basis $\left(  T^{j}%
+F^{i}\right)  _{\left(  i=0\text{ or }r\nmid j\right)  \text{ and }0\leq
+j<r^{i}}$ (that is, we have $\mathcal{M}=\bigoplus\limits_{\substack{\left(
+i,j\right)  \in\mathbb{N}^{2};\\\left(  i=0\text{ or }r\nmid j\right)  \text{
+and }0\leq j<r^{i}}}\mathbb{K}\left[  F\right]  \cdot\left(  T^{j}%
+F^{i}\right)  \cdot\mathbb{K}\left[  T\right]  $, and each $\mathbb{K}\left[
+F\right]  \cdot\left(  T^{j}F^{i}\right)  \cdot\mathbb{K}\left[  T\right]  $
+is isomorphic to $\mathbb{K}\left[  F\right]  \otimes\mathbb{K}\left[
+T\right]  $ as an $\mathbb{K}\left[  F\right]  $-$\mathbb{K}\left[  T\right]
 $-bimodule, where the tensor product is taken over $\mathbb{K}$).
+\end{enumerate}
 \end{proposition}
 
 We notice that the $\mathbb{K}$-algebra $\mathcal{M}$ in Proposition
@@ -1865,12 +1880,12 @@ Corollary \ref{cor.F-gen.bases.f.1.cor2}.
 [Proof of Proposition \ref{prop.F-gen.bases}.]\textbf{(a)} First, we have the
 equality
 \begin{equation}
-FT^{b}=T^{rb}F \label{pf.prop.F-gen.bases.a.1}%
+FT^{b}=T^{rb}F\label{pf.prop.F-gen.bases.a.1}%
 \end{equation}
 in $\mathcal{M}$ for every $b\in\mathbb{N}$ (this can be proven by
 straightforward induction over $b$). Using this equality, Proposition
 \ref{prop.F-gen.bases} \textbf{(a)} can be proven by straightforward induction
-over $a$.
+over $a$. \medskip
 
 \textbf{(b)} Let $\mathcal{N}$ be the free $\mathbb{K}$-module with basis
 $\left(  a_{i,j}\right)  _{i\geq0,\ j\geq0}$. We let $\mathfrak{f}$ be the
@@ -1963,7 +1978,7 @@ F^{i}\right)  _{i\geq0,\ j\geq0}$ spans the $\mathbb{K}$-module $\mathcal{M}$
 (since the $\mathbb{K}$-linear span of this family is $\mathcal{M}^{\prime}$).
 Since we already know that this family is $\mathbb{K}$-linearly independent,
 we can thus conclude that this family is a basis of the $\mathbb{K}$-module
-$\mathcal{M}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(b)}.
+$\mathcal{M}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(b)}. \medskip
 
 \textbf{(c)} Let $\left(  e_{0},e_{1},e_{2},\ldots\right)  $ be the standard
 basis of the left $\mathbb{K}\left[  T\right]  $-module $\mathbb{K}\left[
@@ -1981,7 +1996,7 @@ $\beta$ are mutually inverse. Thus, $\alpha$ is a left $\mathbb{K}\left[
 T\right]  $-module isomorphism. As a consequence, the left $\mathbb{K}\left[
 T\right]  $-module $\mathcal{M}$ has a basis $\left(  \underbrace{\alpha
 \left(  e_{i}\right)  }_{=F^{i}}\right)  _{i\geq0}=\left(  F^{i}\right)
-_{i\geq0}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(c)}.
+_{i\geq0}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(c)}. \medskip
 
 \textbf{(d)} For every integer $u$ and every positive integer $v$, we let
 $u\%v$ denote the remainder of $u$ when divided by $v$, and we let $u//v$
@@ -2012,7 +2027,7 @@ every $i,j\in\mathbb{N}$. So let us fix $i,j\in\mathbb{N}$. Then,%
 =\underbrace{\alpha\left(  g_{i,j\%r^{i}}\right)  }_{\substack{=T^{j\%r^{i}%
 }F^{i}\\\text{(by the definition of }\alpha\text{)}}}T^{j//r^{i}}\\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{since }\alpha\text{ is a right
-}\mathbb{K}\left[  T\right]  \text{-module homomorphism}\right) \\
+}\mathbb{K}\left[  T\right]  \text{-module homomorphism}\right)  \\
 &  =T^{j\%r^{i}}\underbrace{F^{i}T^{j//r^{i}}}_{\substack{=T^{r^{i}\left(
 j//r^{i}\right)  }F^{i}\\\text{(by Proposition \ref{prop.F-gen.bases}
 \textbf{(a),}}\\\text{applied to }a=i\text{ and }b=j//r^{i}\text{)}%
@@ -2051,8 +2066,8 @@ Now,%
 \left(  \beta\circ\alpha\right)  \left(  g_{i,j}T^{k}\right)  =\beta\left(
 \underbrace{\alpha\left(  g_{i,j}T^{k}\right)  }_{=T^{j+r^{i}k}F^{i}}\right)
 =\beta\left(  T^{j+r^{i}k}F^{i}\right)  =g_{i,\left(  j+r^{i}k\right)
-\%r^{i}}T^{\left(  j+r^{i}k\right)  //r^{i}}.
-\label{pf.prop.F-gen.bases.d.fn1.3}%
+\%r^{i}}T^{\left(  j+r^{i}k\right)  //r^{i}}%
+.\label{pf.prop.F-gen.bases.d.fn1.3}%
 \end{equation}
 \par
 But $0\leq j<r^{i}$. Hence, $\left(  j+r^{i}k\right)  \%r^{i}=j$ and $\left(
@@ -2067,7 +2082,7 @@ g_{i,j}\right)  _{i\geq0,\ 0\leq j<r^{i}}$, this shows that the right
 $\mathbb{K}\left[  T\right]  $-module $\mathcal{M}$ has a basis $\left(
 \underbrace{\alpha\left(  g_{i,j}\right)  }_{=T^{j}F^{i}}\right)
 _{i\geq0,\ 0\leq j<r^{i}}=\left(  T^{j}F^{i}\right)  _{i\geq0,\ 0\leq j<r^{i}%
-}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(d)}.
+}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(d)}. \medskip
 
 \textbf{(e)} Let $\left(  e_{0},e_{1},e_{2},\ldots\right)  $ be the standard
 basis of the right $\mathbb{K}\left[  F\right]  $-module $\mathbb{K}\left[
@@ -2085,7 +2100,7 @@ $\beta$ are mutually inverse. Thus, $\alpha$ is a right $\mathbb{K}\left[
 F\right]  $-module isomorphism. As a consequence, the right $\mathbb{K}\left[
 F\right]  $-module $\mathcal{M}$ has a basis $\left(  \underbrace{\alpha
 \left(  e_{j}\right)  }_{=T^{j}}\right)  _{j\geq0}=\left(  T^{j}\right)
-_{j\geq0}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(e)}.
+_{j\geq0}$. This proves Proposition \ref{prop.F-gen.bases} \textbf{(e)}. \medskip
 
 \textbf{(f)} Define a subset $B$ of $\mathbb{N}^{2}$ by
 (\ref{eq.cor.F-gen.bases.f.1.cor1.def-B}). Define a map $\rho:B\times
@@ -2126,7 +2141,7 @@ The definition of $\beta$ shows that $\beta\left(  T^{j}F^{i}\right)
 \underbrace{\alpha\left(  h_{\left(  u,v\right)  }\right)  }_{\substack{=T^{v}%
 F^{u}\\\text{(by the definition of }\alpha\text{)}}}\\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{since }\alpha\text{ is a left }%
-\mathbb{K}\left[  F\right]  \text{-module homomorphism}\right) \\
+\mathbb{K}\left[  F\right]  \text{-module homomorphism}\right)  \\
 &  =\underbrace{F^{k}T^{v}}_{\substack{=T^{r^{k}v}F^{k}\\\text{(by Proposition
 \ref{prop.F-gen.bases} \textbf{(a)},}\\\text{applied to }a=k\text{ and
 }b=v\text{)}}}F^{u}=\underbrace{T^{r^{k}v}}_{\substack{=T^{j}\\\text{(since
@@ -2185,7 +2200,7 @@ j}%
 \]
 (since $B=\left\{  \left(  i,j\right)  \in\mathbb{N}^{2}\ \mid\ i=0\text{ or
 }r\nmid j\right\}  $). This proves Proposition \ref{prop.F-gen.bases}
-\textbf{(f)}.
+\textbf{(f)}. \medskip
 
 \textbf{(g)} Define $C$ and $\zeta$ as in Corollary
 \ref{cor.F-gen.bases.f.1.cor2}. In this proof, the $\otimes$ sign always shall
@@ -2360,7 +2375,7 @@ $\mathcal{M}$ (since $\eta$ is an isomorphism of $\mathbb{K}$-modules), and
 the direct sum on the right hand side remains direct (for the same reason).
 Hence, we obtain%
 \begin{align*}
-\mathcal{M}  &  =\bigoplus_{\left(  i,j\right)  \in C}\underbrace{\eta\left(
+\mathcal{M} &  =\bigoplus_{\left(  i,j\right)  \in C}\underbrace{\eta\left(
 \mathbb{K}\left[  F\right]  \cdot\left(  r_{\left(  i,j\right)  }\otimes
 F^{0}\otimes T^{0}\right)  \cdot\mathbb{K}\left[  T\right]  \right)
 }_{\substack{=\mathbb{K}\left[  F\right]  \cdot\eta\left(  r_{\left(
@@ -2370,13 +2385,13 @@ T\right]  \\\text{(since }\eta\text{ is a }\mathbb{K}\left[  F\right]
 &  =\bigoplus_{\left(  i,j\right)  \in C}\mathbb{K}\left[  F\right]
 \cdot\underbrace{\eta\left(  r_{\left(  i,j\right)  }\otimes F^{0}\otimes
 T^{0}\right)  }_{\substack{=T^{r^{0}\left(  j+r^{i}0\right)  }F^{i+0}%
-\\\text{(by the definition of }\eta\text{)}}}\cdot\mathbb{K}\left[  T\right]
-\\
+\\\text{(by the definition of }\eta\text{)}}}\cdot\,\mathbb{K}\left[
+T\right]  \\
 &  =\underbrace{\bigoplus_{\left(  i,j\right)  \in C}}_{=\bigoplus
 \limits_{\substack{\left(  i,j\right)  \in\mathbb{N}^{2};\\\left(  i=0\text{
 or }r\nmid j\right)  \text{ and }0\leq j<r^{i}}}}\mathbb{K}\left[  F\right]
 \cdot\underbrace{T^{r^{0}\left(  j+r^{i}0\right)  }}_{=T^{j}}%
-\underbrace{F^{i+0}}_{=F^{i}}\cdot\mathbb{K}\left[  T\right] \\
+\underbrace{F^{i+0}}_{=F^{i}}\cdot\,\mathbb{K}\left[  T\right]  \\
 &  =\bigoplus\limits_{\substack{\left(  i,j\right)  \in\mathbb{N}%
 ^{2};\\\left(  i=0\text{ or }r\nmid j\right)  \text{ and }0\leq j<r^{i}%
 }}\mathbb{K}\left[  F\right]  \cdot\left(  T^{j}F^{i}\right)  \cdot
@@ -2384,7 +2399,7 @@ or }r\nmid j\right)  \text{ and }0\leq j<r^{i}}}}\mathbb{K}\left[  F\right]
 \end{align*}
 It remains to show that each $\mathbb{K}\left[  F\right]  \cdot\left(
 T^{j}F^{i}\right)  \cdot\mathbb{K}\left[  T\right]  $ is isomorphic to
-$\mathbb{K}\left[  F\right]  \otimes\mathbb{K}\left[  T\right]  $ as an
+$\mathbb{K}\left[  F\right]  \otimes\mathbb{K}\left[  T\right]  $ as a
 $\mathbb{K}\left[  F\right]  $-$\mathbb{K}\left[  T\right]  $-bimodule. This
 follows from $\eta$ being an isomorphism (the details are left to the reader).
 Thus, Proposition \ref{prop.F-gen.bases} \textbf{(g)} is proven.
@@ -2503,27 +2518,30 @@ $\mathbb{F}_{q}\left[  F\right]  $-module structure on $\mathcal{F}$ can be
 combined to form an $\mathbb{F}_{q}\left[  T\right]  $-$\mathbb{F}_{q}\left[
 F\right]  $-bimodule structure on $\mathcal{F}$).
 
-\textbf{(a)} We have $F^{a}T^{b}=T^{q^{a}b}F^{a}$ in $\mathcal{F}$ for every
-$a\in\mathbb{N}$ and $b\in\mathbb{N}$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $F^{a}T^{b}=T^{q^{a}b}F^{a}$ in $\mathcal{F}$ for
+every $a\in\mathbb{N}$ and $b\in\mathbb{N}$.
 
-\textbf{(b)} The $\mathbb{F}_{q}$-module $\mathcal{F}$ is free with basis
-$\left(  T^{j}F^{i}\right)  _{i\geq0,\ j\geq0}$.
+\item[\textbf{(b)}] The $\mathbb{F}_{q}$-module $\mathcal{F}$ is free with
+basis $\left(  T^{j}F^{i}\right)  _{i\geq0,\ j\geq0}$.
 
-\textbf{(c)} As left $\mathbb{F}_{q}\left[  T\right]  $-module, $\mathcal{F}$
-is free with basis $\left(  F^{i}\right)  _{i\geq0}$.
+\item[\textbf{(c)}] As left $\mathbb{F}_{q}\left[  T\right]  $-module,
+$\mathcal{F}$ is free with basis $\left(  F^{i}\right)  _{i\geq0}$.
 
-\textbf{(d)} As right $\mathbb{F}_{q}\left[  T\right]  $-module, $\mathcal{F}$
-is free with basis $\left(  T^{j}F^{i}\right)  _{i\geq0,\ 0\leq j<q^{i}}$.
+\item[\textbf{(d)}] As right $\mathbb{F}_{q}\left[  T\right]  $-module,
+$\mathcal{F}$ is free with basis $\left(  T^{j}F^{i}\right)  _{i\geq0,\ 0\leq
+j<q^{i}}$.
 
-\textbf{(e)} As right $\mathbb{F}_{q}\left[  F\right]  $-module, $\mathcal{F}$
-is free with basis $\left(  T^{j}\right)  _{j\geq0}$.
+\item[\textbf{(e)}] As right $\mathbb{F}_{q}\left[  F\right]  $-module,
+$\mathcal{F}$ is free with basis $\left(  T^{j}\right)  _{j\geq0}$.
 
-\textbf{(f)} As left $\mathbb{F}_{q}\left[  F\right]  $-module, $\mathcal{F}$
-is free with basis $\left(  T^{j}F^{i}\right)  _{i=0\text{ or }q\nmid j}$.
+\item[\textbf{(f)}] As left $\mathbb{F}_{q}\left[  F\right]  $-module,
+$\mathcal{F}$ is free with basis $\left(  T^{j}F^{i}\right)  _{i=0\text{ or
+}q\nmid j}$.
 
-\textbf{(g)} As $\mathbb{F}_{q}\left[  F\right]  $-$\mathbb{F}_{q}\left[
-T\right]  $-bimodule, $\mathcal{F}$ is free with basis $\left(  T^{j}%
-F^{i}\right)  _{\left(  i=0\text{ or }q\nmid j\right)  \text{ and }0\leq
+\item[\textbf{(g)}] As $\mathbb{F}_{q}\left[  F\right]  $-$\mathbb{F}%
+_{q}\left[  T\right]  $-bimodule, $\mathcal{F}$ is free with basis $\left(
+T^{j}F^{i}\right)  _{\left(  i=0\text{ or }q\nmid j\right)  \text{ and }0\leq
 j<q^{i}}$ (that is, we have $\mathcal{F}=\bigoplus\limits_{\substack{\left(
 i,j\right)  \in\mathbb{N}^{2};\\\left(  i=0\text{ or }q\nmid j\right)  \text{
 and }0\leq j<q^{i}}}\mathbb{F}_{q}\left[  F\right]  \cdot\left(  T^{j}%
@@ -2533,6 +2551,7 @@ _{q}\left[  T\right]  $ is isomorphic to $\mathbb{F}_{q}\left[  F\right]
 \otimes\mathbb{F}_{q}\left[  T\right]  $ as an $\mathbb{F}_{q}\left[
 F\right]  $-$\mathbb{F}_{q}\left[  T\right]  $-bimodule, where the tensor
 product is taken over $\mathbb{F}_{q}$).
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
@@ -2674,16 +2693,18 @@ binary operation $\circ$ on the set $A\left[  X\right]  $.
 \begin{proposition}
 \label{prop.q-pol.comp.basics}Let $A$ be a commutative ring.
 
-\textbf{(a)} The pair $\left(  A\left[  X\right]  ,\circ\right)  $ is a monoid
-with neutral element $X$.
+\begin{enumerate}
+\item[\textbf{(a)}] The pair $\left(  A\left[  X\right]  ,\circ\right)  $ is a
+monoid with neutral element $X$.
 
-\textbf{(b)} Assume that $A$ is a commutative $\mathbb{F}_{q}$-algebra. Then,
-$A\left[  X\right]  _{q-\operatorname*{lin}}$ is a submonoid of the monoid
-$\left(  A\left[  X\right]  ,\circ\right)  $. Moreover, $\left(  A\left[
-X\right]  _{q-\operatorname*{lin}},+,\circ\right)  $ is a (noncommutative)
-$\mathbb{F}_{q}$-algebra with unity $X$ (where the $\mathbb{F}_{q}$-module
-structure is the one obtained by restricting the $A\left[  X\right]  $-module
-structure to $\mathbb{F}_{q}$).
+\item[\textbf{(b)}] Assume that $A$ is a commutative $\mathbb{F}_{q}$-algebra.
+Then, $A\left[  X\right]  _{q-\operatorname*{lin}}$ is a submonoid of the
+monoid $\left(  A\left[  X\right]  ,\circ\right)  $. Moreover, $\left(
+A\left[  X\right]  _{q-\operatorname*{lin}},+,\circ\right)  $ is a
+(noncommutative) $\mathbb{F}_{q}$-algebra with unity $X$ (where the
+$\mathbb{F}_{q}$-module structure is the one obtained by restricting the
+$A\left[  X\right]  $-module structure to $\mathbb{F}_{q}$).
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
@@ -2765,7 +2786,7 @@ $f,g,h\in A\left[  X\right]  $. Thus, $\left(  A\left[  X\right]
 semigroup (since every $f\in A\left[  X\right]  $ satisfies $X\circ f=X\left(
 f\right)  =f$ and $f\circ X=f\left(  X\right)  =f$). Therefore, this semigroup
 $\left(  A\left[  X\right]  ,\circ\right)  $ is a monoid with neutral element
-$X$. This proves Proposition \ref{prop.q-pol.comp.basics} \textbf{(a)}.
+$X$. This proves Proposition \ref{prop.q-pol.comp.basics} \textbf{(a)}. \medskip
 
 \textbf{(b)} \textit{Step 1:} Let $\operatorname*{End}\left(  A\left[
 X\right]  \right)  $ denote the $\mathbb{F}_{q}$-algebra of all endomorphisms
@@ -2894,7 +2915,7 @@ $). Comparing this with%
 \[
 \lambda_{1}\underbrace{\left(  f\circ g_{1}\right)  }_{\substack{=\widehat{f}%
 \left(  g_{1}\right)  \\\text{(by
-(\ref{pf.prop.q-pol.comp.basics.b.dist1.pf.1}))}}}+\lambda_{2}%
+(\ref{pf.prop.q-pol.comp.basics.b.dist1.pf.1}))}}}+\,\lambda_{2}%
 \underbrace{\left(  f\circ g_{2}\right)  }_{\substack{=\widehat{f}\left(
 g_{2}\right)  \\\text{(by (\ref{pf.prop.q-pol.comp.basics.b.dist1.pf.1}))}%
 }}=\lambda_{1}\widehat{f}\left(  g_{1}\right)  +\lambda_{2}\widehat{f}\left(
@@ -2923,7 +2944,7 @@ _{1}f_{1}+\lambda_{2}f_{2}\right)  \left(  g\right)  =\lambda_{1}f_{1}\left(
 g\right)  +\lambda_{2}f_{2}\left(  g\right)  .
 \]
 Comparing this with $\lambda_{1}\underbrace{\left(  f_{1}\circ g\right)
-}_{=f_{1}\left(  g\right)  }+\lambda_{2}\underbrace{\left(  f_{2}\circ
+}_{=f_{1}\left(  g\right)  }+\,\lambda_{2}\underbrace{\left(  f_{2}\circ
 g\right)  }_{=f_{2}\left(  g\right)  }=\lambda_{1}f_{1}\left(  g\right)
 +\lambda_{2}f_{2}\left(  g\right)  $, we obtain $\left(  \lambda_{1}%
 f_{1}+\lambda_{2}f_{2}\right)  \circ g=\lambda_{1}\left(  f_{1}\circ g\right)
@@ -3011,38 +3032,40 @@ _{q}$-algebra homomorphism $\operatorname*{Fqpol}:\mathcal{F}\rightarrow
 $\operatorname*{Fqpol}\left(  F\right)  =X^{q}$ and $\operatorname*{Fqpol}%
 \left(  T\right)  =TX$.
 
-\textbf{(a)} This homomorphism $\operatorname*{Fqpol}$ is well-defined.
+\begin{enumerate}
+\item[\textbf{(a)}] This homomorphism $\operatorname*{Fqpol}$ is well-defined.
 
-\textbf{(b)} This homomorphism $\operatorname*{Fqpol}$ is an $\mathbb{F}_{q}%
-$-algebra isomorphism.
+\item[\textbf{(b)}] This homomorphism $\operatorname*{Fqpol}$ is an
+$\mathbb{F}_{q}$-algebra isomorphism.
 
-\textbf{(c)} We have $\operatorname*{Fqpol}\left(  T^{j}F^{i}\right)
+\item[\textbf{(c)}] We have $\operatorname*{Fqpol}\left(  T^{j}F^{i}\right)
 =T^{j}X^{q^{i}}$ for every $i\in\mathbb{N}$ and $j\in\mathbb{N}$.
 
-\textbf{(d)} We have $\operatorname*{Fqpol}t=t\cdot X$ for every
+\item[\textbf{(d)}] We have $\operatorname*{Fqpol}t=t\cdot X$ for every
 $t\in\mathbb{F}_{q}\left[  T\right]  $. (Here, we regard $\mathbb{F}%
 _{q}\left[  T\right]  $ as an $\mathbb{F}_{q}$-subalgebra of $\mathcal{F}$ as
 before. The expression \textquotedblleft$t\cdot X$\textquotedblright\ means
 the product of $t\in\mathbb{F}_{q}\left[  T\right]  \subseteq\mathbb{F}%
 _{q}\left[  T\right]  \left[  X\right]  $ with $X$ in $\mathbb{F}_{q}\left[
 T\right]  \left[  X\right]  $.)
+\end{enumerate}
 \end{theorem}
 
 \begin{proof}
 [Proof of Theorem \ref{thm.q-pol.=F}.]For every $n\in\mathbb{N}$, we have%
 \begin{equation}
 \left(  TX\right)  ^{\circ n}=T^{n}X\ \ \ \ \ \ \ \ \ \ \text{in }%
-\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  _{q-\operatorname*{lin}}.
-\label{pf.thm.q-pol.=F.TXon}%
+\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  _{q-\operatorname*{lin}%
+}.\label{pf.thm.q-pol.=F.TXon}%
 \end{equation}
 (This follows by a straightforward induction on $n$.) Furthermore, for every
 $n\in\mathbb{N}$, we have%
 \begin{equation}
 \left(  X^{q}\right)  ^{\circ n}=X^{q^{n}}\ \ \ \ \ \ \ \ \ \ \text{in
-}\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  _{q-\operatorname*{lin}}.
-\label{pf.thm.q-pol.=F.Xqon}%
+}\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  _{q-\operatorname*{lin}%
+}.\label{pf.thm.q-pol.=F.Xqon}%
 \end{equation}
-(Again, this is easy to prove by induction.)
+(Again, this is easy to prove by induction.) \medskip
 
 \textbf{(a)} In $\mathbb{F}_{q}\left[  T\right]  \left[  X\right]
 _{q-\operatorname*{lin}}$, we have $X^{q}\circ\left(  TX\right)  =\left(
@@ -3060,7 +3083,7 @@ _{q-\operatorname*{lin}}$, $u=X^{q}$ and $v=TX$, we thus conclude that there
 exists a unique $\mathbb{F}_{q}$-algebra homomorphism $\mathcal{F}%
 \rightarrow\mathcal{U}$ sending $F$ and $T$ to $X^{q}$ and $TX$, respectively.
 In other words, the homomorphism $\operatorname*{Fqpol}$ is well-defined. This
-proves Theorem \ref{thm.q-pol.=F} \textbf{(a)}.
+proves Theorem \ref{thm.q-pol.=F} \textbf{(a)}. \medskip
 
 \textbf{(c)} For every $i\in\mathbb{N}$ and $j\in\mathbb{N}$, we have%
 \begin{align*}
@@ -3068,13 +3091,13 @@ proves Theorem \ref{thm.q-pol.=F} \textbf{(a)}.
 \underbrace{\operatorname*{Fqpol}T}_{=TX}\right)  ^{\circ j}\circ\left(
 \underbrace{\operatorname*{Fqpol}F}_{=X^{q}}\right)  ^{\circ i}\\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{since }\operatorname*{Fqpol}\text{ is an
-}\mathbb{F}_{q}\text{-algebra homomorphism}\right) \\
+}\mathbb{F}_{q}\text{-algebra homomorphism}\right)  \\
 &  =\underbrace{\left(  TX\right)  ^{\circ j}}_{\substack{=T^{j}X\\\text{(by
 (\ref{pf.thm.q-pol.=F.TXon}))}}}\circ\underbrace{\left(  X^{q}\right)  ^{\circ
 i}}_{\substack{=X^{q^{i}}\\\text{(by (\ref{pf.thm.q-pol.=F.Xqon}))}}}=\left(
 T^{j}X\right)  \circ X^{q^{i}}=T^{j}X^{q^{i}}.
 \end{align*}
-This proves Theorem \ref{thm.q-pol.=F} \textbf{(c)}.
+This proves Theorem \ref{thm.q-pol.=F} \textbf{(c)}. \medskip
 
 \textbf{(b)} The $\mathbb{F}_{q}\left[  T\right]  $-module $\mathbb{F}%
 _{q}\left[  T\right]  \left[  X\right]  _{q-\operatorname*{lin}}$ has basis
@@ -3095,7 +3118,7 @@ $\left(  T^{j}X^{q^{i}}\right)  _{i\geq0,\ j\geq0}$ of the $\mathbb{F}_{q}%
 $-module $\mathbb{F}_{q}\left[  T\right]  \left[  X\right]
 _{q-\operatorname*{lin}}$. Consequently, $\operatorname*{Fqpol}$ is an
 $\mathbb{F}_{q}$-module isomorphism, thus an $\mathbb{F}_{q}$-algebra
-isomorphism. This proves Theorem \ref{thm.q-pol.=F} \textbf{(b)}.
+isomorphism. This proves Theorem \ref{thm.q-pol.=F} \textbf{(b)}. \medskip
 
 \textbf{(d)} Let $t\in\mathbb{F}_{q}\left[  T\right]  $. We must prove the
 equality $\operatorname*{Fqpol}t=t\cdot X$. Since this equality is clearly
@@ -3322,20 +3345,20 @@ f_{W,\psi}+\left(  h\circ\varphi\right)  \left(  v\right)  \right)  .
 
 The definition of $f_{V\oplus W,\chi}$ yields%
 \begin{align*}
-f_{V\oplus W,\chi}  &  =\prod_{v\in V\oplus W}\left(  X+\chi\left(  v\right)
+f_{V\oplus W,\chi} &  =\prod_{v\in V\oplus W}\left(  X+\chi\left(  v\right)
 \right)  =\underbrace{\prod_{\left(  v,w\right)  \in V\oplus W}}_{=\prod_{v\in
-V}\prod_{w\in W}}\left(  X+\underbrace{\chi\left(  v,w\right)  }%
-_{\substack{=\varphi\left(  v\right)  +\psi\left(  w\right)  \\\text{(by the
-definition of }\chi\text{)}}}\right) \\
+V}\ \ \prod_{w\in W}}\left(  X+\underbrace{\chi\left(  v,w\right)
+}_{\substack{=\varphi\left(  v\right)  +\psi\left(  w\right)  \\\text{(by the
+definition of }\chi\text{)}}}\right)  \\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we renamed the index }v\text{ as
-}\left(  v,w\right)  \text{ in the product}\right) \\
-&  =\prod_{v\in V}\underbrace{\prod_{w\in W}\left(  X+\varphi\left(  v\right)
-+\psi\left(  w\right)  \right)  }_{\substack{=f_{W,\psi}+\left(  h\circ
-\varphi\right)  \left(  v\right)  \\\text{(by (\ref{pf.lem.mac1.too-early.4}%
-))}}}=\prod_{v\in V}\left(  f_{W,\psi}+\left(  h\circ\varphi\right)  \left(
-v\right)  \right) \\
+}\left(  v,w\right)  \text{ in the product}\right)  \\
+&  =\prod_{v\in V}\ \ \underbrace{\prod_{w\in W}\left(  X+\varphi\left(
+v\right)  +\psi\left(  w\right)  \right)  }_{\substack{=f_{W,\psi}+\left(
+h\circ\varphi\right)  \left(  v\right)  \\\text{(by
+(\ref{pf.lem.mac1.too-early.4}))}}}=\prod_{v\in V}\left(  f_{W,\psi}+\left(
+h\circ\varphi\right)  \left(  v\right)  \right)  \\
 &  =f_{V,h\circ\varphi}\left(  f_{W,\psi}\right)  \ \ \ \ \ \ \ \ \ \ \left(
-\text{by (\ref{pf.lem.mac1.too-early.6})}\right) \\
+\text{by (\ref{pf.lem.mac1.too-early.6})}\right)  \\
 &  =f_{V,h\circ\varphi}\circ f_{W,\psi}.
 \end{align*}
 This proves Lemma \ref{lem.mac1.too-early}.
@@ -3798,13 +3821,16 @@ $-modules equipped with a \textquotedblleft Frobenius map\textquotedblright%
 \ satisfying a certain rule. Let us define this in more detail:
 
 \begin{definition}
-\label{def.F.frobmod}\textbf{(a)} A \textit{Frobenius }$\mathbb{F}_{q}\left[
-T\right]  $\textit{-module} means a pair $\left(  M,\mathfrak{f}\right)  $,
-where $M$ is an $\mathbb{F}_{q}\left[  T\right]  $-module, and where
-$\mathfrak{f}:M\rightarrow M$ is an $\mathbb{F}_{q}$-linear map satisfying%
+\label{def.F.frobmod}\ \ 
+
+\begin{enumerate}
+\item[\textbf{(a)}] A \textit{Frobenius }$\mathbb{F}_{q}\left[  T\right]
+$\textit{-module} means a pair $\left(  M,\mathfrak{f}\right)  $, where $M$ is
+an $\mathbb{F}_{q}\left[  T\right]  $-module, and where $\mathfrak{f}%
+:M\rightarrow M$ is an $\mathbb{F}_{q}$-linear map satisfying%
 \begin{equation}
 \mathfrak{f}\left(  Tm\right)  =T^{q}\mathfrak{f}\left(  m\right)
-\ \ \ \ \ \ \ \ \ \ \text{for every }m\in M. \label{eq.def.F.frobmod.axiom}%
+\ \ \ \ \ \ \ \ \ \ \text{for every }m\in M.\label{eq.def.F.frobmod.axiom}%
 \end{equation}
 This map $\mathfrak{f}$ is called the \textit{Frobenius map} of the Frobenius
 $\mathbb{F}_{q}\left[  T\right]  $-module $\left(  M,\mathfrak{f}\right)  $.
@@ -3815,17 +3841,18 @@ $\left(  M,\mathfrak{f}\right)  $\textquotedblright, leaving the Frobenius map
 $\mathfrak{f}$ implicit; in this situation, the Frobenius map $\mathfrak{f}$
 will be denoted by $\mathfrak{f}_{M}$.
 
-\textbf{(b)} Let $M$ and $N$ be two Frobenius $\mathbb{F}_{q}\left[  T\right]
-$-modules. Then, a map $h:M\rightarrow N$ is said to be a \textit{homomorphism
-of Frobenius }$\mathbb{F}_{q}\left[  T\right]  $\textit{-modules} if and only
-if it is $\mathbb{F}_{q}\left[  T\right]  $-linear and \textquotedblleft
-respects the Frobenius maps\textquotedblright\ (i.e., satisfies $\mathfrak{f}%
-_{N}\circ h=h\circ\mathfrak{f}_{M}$).
+\item[\textbf{(b)}] Let $M$ and $N$ be two Frobenius $\mathbb{F}_{q}\left[
+T\right]  $-modules. Then, a map $h:M\rightarrow N$ is said to be a
+\textit{homomorphism of Frobenius }$\mathbb{F}_{q}\left[  T\right]
+$\textit{-modules} if and only if it is $\mathbb{F}_{q}\left[  T\right]
+$-linear and \textquotedblleft respects the Frobenius maps\textquotedblright%
+\ (i.e., satisfies $\mathfrak{f}_{N}\circ h=h\circ\mathfrak{f}_{M}$).
 
-\textbf{(c)} We let $\operatorname*{FrobMod}\nolimits_{\mathbb{F}_{q}\left[
-T\right]  }$ denote the category whose objects are the Frobenius
+\item[\textbf{(c)}] We let $\operatorname*{FrobMod}\nolimits_{\mathbb{F}%
+_{q}\left[  T\right]  }$ denote the category whose objects are the Frobenius
 $\mathbb{F}_{q}\left[  T\right]  $-modules, and whose morphisms are the
 homomorphisms of Frobenius $\mathbb{F}_{q}\left[  T\right]  $-modules.
+\end{enumerate}
 \end{definition}
 
 It turns out that this category $\operatorname*{FrobMod}\nolimits_{\mathbb{F}%
@@ -3840,37 +3867,39 @@ $\operatorname*{Finc}\nolimits_{T}:\mathbb{F}_{q}\left[  T\right]
 \rightarrow\mathcal{F}$ as an inclusion. Thus, $\mathbb{F}_{q}\left[
 T\right]  $ is an $\mathbb{F}_{q}$-subalgebra of $\mathcal{F}$.
 
-\textbf{(a)} Let $M$ be a Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module.
-Then, there exists a unique $\mathcal{F}$-module structure on $M$ which
-extends the $\mathbb{F}_{q}\left[  T\right]  $-module structure on $M$ and
-satisfies%
+\begin{enumerate}
+\item[\textbf{(a)}] Let $M$ be a Frobenius $\mathbb{F}_{q}\left[  T\right]
+$-module. Then, there exists a unique $\mathcal{F}$-module structure on $M$
+which extends the $\mathbb{F}_{q}\left[  T\right]  $-module structure on $M$
+and satisfies%
 \[
 F\cdot m=\mathfrak{f}_{M}\left(  m\right)  \ \ \ \ \ \ \ \ \ \ \text{for every
 }m\in M.
 \]
 
 
-\textbf{(b)} Let $N$ be an $\mathcal{F}$-module. Then, $N$ becomes an
+\item[\textbf{(b)}] Let $N$ be an $\mathcal{F}$-module. Then, $N$ becomes an
 $\mathbb{F}_{q}\left[  T\right]  $-module (since $\mathbb{F}_{q}\left[
 T\right]  \subseteq\mathcal{F}$). Let $\mathfrak{f}$ be the action of
 $F\in\mathcal{F}$ on $N$ (that is, the $\mathbb{F}_{q}$-linear map
 $N\rightarrow N,\ n\mapsto F\cdot n$). Then, $\left(  N,\mathfrak{f}\right)  $
 is a Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module.
 
-\textbf{(c)} Proposition \ref{prop.F.frobmod.cateq} \textbf{(a)} defines a
-functor from $\operatorname*{FrobMod}\nolimits_{\mathbb{F}_{q}\left[
-T\right]  }$ to $\operatorname*{Mod}\nolimits_{\mathcal{F}}$ (because, to any
-Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module $M$, it assigns an
-$\mathcal{F}$-module structure on $M$, and this assignment can easily be
-extended to morphisms). Proposition \ref{prop.F.frobmod.cateq} \textbf{(b)}
-defines a functor from $\operatorname*{Mod}\nolimits_{\mathcal{F}}$ to
-$\operatorname*{FrobMod}\nolimits_{\mathbb{F}_{q}\left[  T\right]  }$
+\item[\textbf{(c)}] Proposition \ref{prop.F.frobmod.cateq} \textbf{(a)}
+defines a functor from $\operatorname*{FrobMod}\nolimits_{\mathbb{F}%
+_{q}\left[  T\right]  }$ to $\operatorname*{Mod}\nolimits_{\mathcal{F}}$
+(because, to any Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module $M$, it
+assigns an $\mathcal{F}$-module structure on $M$, and this assignment can
+easily be extended to morphisms). Proposition \ref{prop.F.frobmod.cateq}
+\textbf{(b)} defines a functor from $\operatorname*{Mod}\nolimits_{\mathcal{F}%
+}$ to $\operatorname*{FrobMod}\nolimits_{\mathbb{F}_{q}\left[  T\right]  }$
 (because, to any $\mathcal{F}$-module $N$, it assigns a Frobenius
 $\mathbb{F}_{q}\left[  T\right]  $-module $\left(  N,\mathfrak{f}\right)  $,
 and this assignment can easily be extended to morphisms). These two functors
 are mutually inverse. Thus, the categories $\operatorname*{FrobMod}%
 \nolimits_{\mathbb{F}_{q}\left[  T\right]  }$ and $\operatorname*{Mod}%
 \nolimits_{\mathcal{F}}$ are isomorphic.
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
@@ -3978,7 +4007,7 @@ extends the $\mathbb{F}_{q}\left[  T\right]  $-module structure on $M$ and
 satisfies (\ref{pf.prop.F.frobmod.cateq.a.want}) (namely, the $\mathcal{F}%
 $-module structure on $M$ obtained from the map $\Phi:\mathcal{F}%
 \rightarrow\operatorname*{End}M$). This completes the proof of Proposition
-\ref{prop.F.frobmod.cateq} \textbf{(a)}.
+\ref{prop.F.frobmod.cateq} \textbf{(a)}. \medskip
 
 \textbf{(b)} We need to show that $\left(  N,\mathfrak{f}\right)  $ is a
 Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module. In other words, we need
@@ -4002,7 +4031,7 @@ _{=T^{q}F}m=T^{q}\underbrace{Fm}_{=\mathfrak{f}\left(  m\right)  }%
 =T^{q}\mathfrak{f}\left(  m\right)  $. Thus,
 (\ref{pf.prop.F.frobmod.cateq.b.want}) is proven. As we have already
 explained, this completes the proof of Proposition \ref{prop.F.frobmod.cateq}
-\textbf{(b)}.
+\textbf{(b)}. \medskip
 
 \textbf{(c)} It is clear that if we apply the functor $\operatorname*{FrobMod}%
 \nolimits_{\mathbb{F}_{q}\left[  T\right]  }\rightarrow\operatorname*{Mod}%
@@ -4030,19 +4059,22 @@ thus, $\mathcal{F}$-module) is given by commutative $\mathbb{F}_{q}\left[
 T\right]  $-algebras and their Frobenius homomorphisms:
 
 \begin{proposition}
-\label{prop.F.frobmod.alg}\textbf{(a)} If $A$ is a commutative $\mathbb{F}%
-_{q}\left[  T\right]  $-algebra, then $\left(  A,\operatorname*{Frob}%
-\nolimits_{A}\right)  $ is a Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module.
+\label{prop.F.frobmod.alg}\ \ 
 
-\textbf{(b)} If $A$ and $B$ are two commutative $\mathbb{F}_{q}\left[
+\begin{enumerate}
+\item[\textbf{(a)}] If $A$ is a commutative $\mathbb{F}_{q}\left[  T\right]
+$-algebra, then $\left(  A,\operatorname*{Frob}\nolimits_{A}\right)  $ is a
+Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module.
+
+\item[\textbf{(b)}] If $A$ and $B$ are two commutative $\mathbb{F}_{q}\left[
 T\right]  $-algebras, and if $f:A\rightarrow B$ is an $\mathbb{F}_{q}\left[
 T\right]  $-algebra homomorphism, then $f$ is also a homomorphism of Frobenius
 $\mathbb{F}_{q}\left[  T\right]  $-modules from $\left(
 A,\operatorname*{Frob}\nolimits_{A}\right)  $ to $\left(
 B,\operatorname*{Frob}\nolimits_{B}\right)  $.
 
-\textbf{(c)} Proposition \ref{prop.F.frobmod.alg} \textbf{(a)} assigns a
-Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module $\left(
+\item[\textbf{(c)}] Proposition \ref{prop.F.frobmod.alg} \textbf{(a)} assigns
+a Frobenius $\mathbb{F}_{q}\left[  T\right]  $-module $\left(
 A,\operatorname*{Frob}\nolimits_{A}\right)  $ to each commutative
 $\mathbb{F}_{q}\left[  T\right]  $-algebra $A$. This defines a functor from
 the category of commutative $\mathbb{F}_{q}\left[  T\right]  $-algebras to the
@@ -4062,6 +4094,7 @@ F\cdot m=\operatorname*{Frob}\nolimits_{A}\left(  m\right)
 \ \ \ \ \ \ \ \ \ \ \text{for every }m\in A.
 \]
 
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
@@ -4084,9 +4117,10 @@ Hence, $\left(  A,\operatorname*{Frob}\nolimits_{A}\right)  $ is a Frobenius
 $\mathbb{F}_{q}\left[  T\right]  $-module (by the definition of a
 \textquotedblleft Frobenius $\mathbb{F}_{q}\left[  T\right]  $%
 -module\textquotedblright). This proves Proposition \ref{prop.F.frobmod.alg}
-\textbf{(a)}.
+\textbf{(a)}. \medskip
 
-\textbf{(b)} The proof of Proposition \ref{prop.F.frobmod.alg} \textbf{(b)} is straightforward.
+\textbf{(b)} The proof of Proposition \ref{prop.F.frobmod.alg} \textbf{(b)} is
+straightforward. \medskip
 
 \textbf{(c)} Proposition \ref{prop.F.frobmod.alg} \textbf{(c)} follows from
 what we have proven above. (Specifically, the statement that the $\mathcal{F}%
@@ -4610,24 +4644,26 @@ $T\in\mathbb{F}_{q}\left[  T\right]  $ modulo the ideal $\pi\mathbb{F}%
 _{q}\left[  T\right]  $. Thus, $\mathbb{F}_{\pi}=\mathbb{F}\left[
 \alpha\right]  $ and $\pi\left(  \alpha\right)  =0$.
 
-\textbf{(a)} The $\mathbb{F}_{q}$-vector space $\mathbb{F}_{\pi}$ has basis
-$\left(  \alpha^{0},\alpha^{1},\ldots,\alpha^{d-1}\right)  $.
+\begin{enumerate}
+\item[\textbf{(a)}] The $\mathbb{F}_{q}$-vector space $\mathbb{F}_{\pi}$ has
+basis $\left(  \alpha^{0},\alpha^{1},\ldots,\alpha^{d-1}\right)  $.
 
-\textbf{(b)} The elements $\alpha^{q^{0}},\alpha^{q^{1}},\ldots,\alpha
-^{q^{d-1}}$ are pairwise distinct and are precisely the roots of $\pi$.
+\item[\textbf{(b)}] The elements $\alpha^{q^{0}},\alpha^{q^{1}},\ldots
+,\alpha^{q^{d-1}}$ are pairwise distinct and are precisely the roots of $\pi$.
 
-\textbf{(c)} We have%
+\item[\textbf{(c)}] We have%
 \begin{equation}
 \pi=\prod_{k=0}^{d-1}\left(  T-\alpha^{q^{k}}\right)
-\ \ \ \ \ \ \ \ \ \ \text{in }\mathbb{F}_{\pi}\left[  T\right]  .
-\label{eq.prop.F.u(pi).lem1.c}%
+\ \ \ \ \ \ \ \ \ \ \text{in }\mathbb{F}_{\pi}\left[  T\right]
+.\label{eq.prop.F.u(pi).lem1.c}%
 \end{equation}
 
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
 [Proof of Proposition \ref{prop.F.u(pi).lem1}.]\textbf{(a)} This is well-known
-(and holds for any commutative ring instead of $\mathbb{F}_{q}$).
+(and holds for any commutative ring instead of $\mathbb{F}_{q}$). \medskip
 
 \textbf{(c)} Recall that $\operatorname*{Frob}\nolimits_{A}$ is an
 $\mathbb{F}_{q}$-algebra endomorphism of $A$ whenever $A$ is a commutative
@@ -4832,7 +4868,7 @@ $\gamma$ has $<d$ roots. This contradiction proves that our assumption (that
 $\gamma\neq0$) was false. Hence, we have $\gamma=0$. Thus, $0=\gamma=\pi
 -\prod_{k=0}^{d-1}\left(  T-\alpha^{q^{k}}\right)  $, so that $\pi=\prod
 _{k=0}^{d-1}\left(  T-\alpha^{q^{k}}\right)  $. This proves Proposition
-\ref{prop.F.u(pi).lem1} \textbf{(c)}.
+\ref{prop.F.u(pi).lem1} \textbf{(c)}. \medskip
 
 \textbf{(b)} The elements $\alpha^{q^{0}},\alpha^{q^{1}},\ldots,\alpha
 ^{q^{d-1}}$ are pairwise distinct (by (\ref{pf.prop.F.u(pi).lem1.b.neq2})) and
@@ -4850,11 +4886,14 @@ of $T^{i}$ in $\pi$. For each $k\in\left\{  0,1,\ldots,d\right\}  $, define a
 polynomial $p_{k}\in\mathbb{K}\left[  T\right]  $ by $p_{k}=\sum_{i=k+1}%
 ^{d}\pi_{i}T^{i-1-k}$. Then:
 
-\textbf{(a)} We have $p_{d-1}=\pi_{d}$ (a constant polynomial) and $p_{d}=0$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $p_{d-1}=\pi_{d}$ (a constant polynomial) and
+$p_{d}=0$.
 
-\textbf{(b)} We have $\pi\left(  X\right)  -\pi\left(  Y\right)  =\left(
-X-Y\right)  \sum_{i=0}^{d-1}p_{i}\left(  X\right)  Y^{i}$ in the ring
+\item[\textbf{(b)}] We have $\pi\left(  X\right)  -\pi\left(  Y\right)
+=\left(  X-Y\right)  \sum_{i=0}^{d-1}p_{i}\left(  X\right)  Y^{i}$ in the ring
 $\mathbb{K}\left[  X,Y\right]  $.
+\end{enumerate}
 \end{lemma}
 
 \begin{proof}
@@ -5344,14 +5383,18 @@ This proves Corollary \ref{cor.F.u(pi).mod}.
 Next, we shall show a series of simple propositions which will culminate (if
 this can be called a culmination) in a Carlitz analogue of the classical
 \textquotedblleft lifting the exponent\textquotedblright\ theorem (see, e.g.,
-\cite[version with solutions (ancillary file), (12.68.8)]{reiner-hopf} for it).
+\cite[version with solutions (ancillary file), (13.84.8)]{reiner-hopf} for it).
 
 \begin{proposition}
-\label{prop.F.lift.CarlP-P}\textbf{(a)} The $\mathbb{F}_{q}$-vector subspace
-$\mathcal{F}F$ of $\mathcal{F}$ is a two-sided ideal of $\mathcal{F}$.
+\label{prop.F.lift.CarlP-P}\ \ 
 
-\textbf{(b)} Let $P\in\mathbb{F}_{q}\left[  T\right]  $. Then,
+\begin{enumerate}
+\item[\textbf{(a)}] The $\mathbb{F}_{q}$-vector subspace $\mathcal{F}F$ of
+$\mathcal{F}$ is a two-sided ideal of $\mathcal{F}$.
+
+\item[\textbf{(b)}] Let $P\in\mathbb{F}_{q}\left[  T\right]  $. Then,
 $\operatorname*{Carl}P\equiv P\operatorname{mod}\mathcal{F}F$.
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
@@ -5397,7 +5440,7 @@ furthermore have $\mathcal{F}\underbrace{F\cdot\mathcal{F}}_{=F\mathcal{F}%
 \subseteq\mathcal{F}F}\subseteq\underbrace{\mathcal{FF}}_{\subseteq
 \mathcal{F}}F\subseteq\mathcal{F}F$, we thus conclude that $\mathcal{F}F$ is a
 two-sided ideal of $\mathcal{F}$. This proves Proposition
-\ref{prop.F.lift.CarlP-P} \textbf{(a)}.
+\ref{prop.F.lift.CarlP-P} \textbf{(a)}. \medskip
 
 \textbf{(b)} Proposition \ref{prop.F.lift.CarlP-P} \textbf{(a)} shows that
 $\mathcal{F}F$ is a two-sided ideal of $\mathcal{F}$. Hence, $\mathcal{F}%
@@ -5457,22 +5500,25 @@ In other words, $\operatorname*{Carl}P\equiv P\operatorname{mod}\mathcal{F}F$
 \label{prop.F.lift.FPA}Let $A$ be an $\mathcal{F}$-module. Let $P\in
 \mathbb{F}_{q}\left[  T\right]  $.
 
-\textbf{(a)} We have $FPA\subseteq P^{q}A$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $FPA\subseteq P^{q}A$.
 
-\textbf{(b)} The $\mathbb{F}_{q}$-vector subspace $PA$ of $A$ is a left
+\item[\textbf{(b)}] The $\mathbb{F}_{q}$-vector subspace $PA$ of $A$ is a left
 $\mathcal{F}$-submodule of $A$.
 
-\textbf{(c)} Let $k$ be a positive integer. Then, $FP^{k}A\subseteq P^{k+1}A$.
+\item[\textbf{(c)}] Let $k$ be a positive integer. Then, $FP^{k}A\subseteq
+P^{k+1}A$.
 
-\textbf{(d)} Let $k$ be a positive integer. Then, $\left(
+\item[\textbf{(d)}] Let $k$ be a positive integer. Then, $\left(
 \operatorname*{Carl}P\right)  P^{k}A\subseteq P^{k+1}A$.
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
 [Proof of Proposition \ref{prop.F.lift.FPA}.]\textbf{(a)} Proposition
 \ref{prop.F.FP} yields $FP=P^{q}F$ in $\mathcal{F}$. Hence, $\underbrace{FP}%
 _{=P^{q}F}A=P^{q}\underbrace{FA}_{\subseteq A}\subseteq P^{q}A$. Thus,
-Proposition \ref{prop.F.lift.FPA} \textbf{(a)} is proven.
+Proposition \ref{prop.F.lift.FPA} \textbf{(a)} is proven. \medskip
 
 \textbf{(b)} Proposition \ref{prop.F.lift.FPA} \textbf{(a)} yields
 $FPA\subseteq\underbrace{P^{q}}_{\substack{=PP^{q-1}\\\text{(since }%
@@ -5487,12 +5533,12 @@ $\mathcal{F}$-module $\mathcal{U}$ satisfying $F\mathcal{V}\subseteq
 left $\mathcal{F}$-submodule of $\mathcal{U}$. Applying this to $\mathcal{U}%
 =A$ and $\mathcal{V}=PA$, we conclude that $PA$ is a left $\mathcal{F}%
 $-submodule of $A$ (since $FPA\subseteq PA$ and $TPA\subseteq PA$).
-Proposition \ref{prop.F.lift.FPA} \textbf{(b)} is thus shown.
+Proposition \ref{prop.F.lift.FPA} \textbf{(b)} is thus shown. \medskip
 
 \textbf{(c)} Proposition \ref{prop.F.lift.FPA} \textbf{(a)} (applied to
 $P^{k}$ instead of $P$) yields%
 \begin{align*}
-FP^{k}A  &  \subseteq\underbrace{\left(  P^{k}\right)  ^{q}}%
+FP^{k}A &  \subseteq\underbrace{\left(  P^{k}\right)  ^{q}}%
 _{\substack{=\left(  P^{k}\right)  ^{2}\left(  P^{k}\right)  ^{q-2}%
 \\\text{(since }q\geq2\text{)}}}A=\left(  P^{k}\right)  ^{2}%
 \underbrace{\left(  P^{k}\right)  ^{q-2}A}_{\subseteq A}\subseteq\left(
@@ -5501,7 +5547,7 @@ P^{k}\right)  ^{2}A=P^{k}\underbrace{P^{k}}_{\substack{=PP^{k-1}\\\text{(since
 &  =\underbrace{P^{k}P}_{=P^{k+1}}\underbrace{P^{k-1}A}_{\subseteq A}\subseteq
 P^{k+1}A.
 \end{align*}
-This establishes Proposition \ref{prop.F.lift.FPA} \textbf{(c)}.
+This establishes Proposition \ref{prop.F.lift.FPA} \textbf{(c)}. \medskip
 
 \textbf{(d)} Proposition \ref{prop.F.lift.CarlP-P} \textbf{(b)} yields
 $\operatorname*{Carl}P\equiv P\operatorname{mod}\mathcal{F}F$. In other words,
@@ -5533,15 +5579,18 @@ $P\in\mathbb{F}_{q}\left[  T\right]  $. Let $k$ be a positive integer.
 Let $a$ and $b$ be two elements of $A$ such that $a\equiv b\operatorname{mod}%
 P^{k}A$.
 
-\textbf{(a)} We have $F^{\deg P}a\equiv F^{\deg P}b\operatorname{mod}P^{k+1}A$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $F^{\deg P}a\equiv F^{\deg P}b\operatorname{mod}%
+P^{k+1}A$.
 
-\textbf{(b)} We have $\left(  \operatorname*{Carl}P\right)  a\equiv\left(
-\operatorname*{Carl}P\right)  b\operatorname{mod}P^{k+1}A$.
+\item[\textbf{(b)}] We have $\left(  \operatorname*{Carl}P\right)
+a\equiv\left(  \operatorname*{Carl}P\right)  b\operatorname{mod}P^{k+1}A$.
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
 [Proof of Proposition \ref{prop.F.lift.lift-P}.]From $a\equiv
-b\operatorname{mod}P^{k}A$, we obtain $a-b\in P^{k}A$.
+b\operatorname{mod}P^{k}A$, we obtain $a-b\in P^{k}A$. \medskip
 
 \textbf{(a)} If $P=0$, then the claim of Proposition \ref{prop.F.lift.lift-P}
 \textbf{(a)} is true\footnote{\textit{Proof.} Assume that $P=0$. Thus,
@@ -5572,7 +5621,7 @@ P^{k}A$.
 
 Now, $\deg P=d$, so that%
 \begin{align*}
-F^{\deg P}a-F^{\deg P}b  &  =F^{d}a-F^{d}b=\underbrace{F^{d}}_{=FF^{d-1}%
+F^{\deg P}a-F^{\deg P}b &  =F^{d}a-F^{d}b=\underbrace{F^{d}}_{=FF^{d-1}%
 }\underbrace{\left(  a-b\right)  }_{\in P^{k}A}\in F\underbrace{F^{d-1}}%
 _{\in\mathcal{F}}P^{k}A\subseteq F\underbrace{\mathcal{F}\cdot P^{k}%
 A}_{\subseteq P^{k}A}\\
@@ -5580,7 +5629,7 @@ A}_{\subseteq P^{k}A}\\
 Proposition \ref{prop.F.lift.FPA} \textbf{(c)}}\right)  .
 \end{align*}
 In other words, $F^{\deg P}a\equiv F^{\deg P}b\operatorname{mod}P^{k+1}A$.
-This proves Proposition \ref{prop.F.lift.lift-P} \textbf{(a)}.
+This proves Proposition \ref{prop.F.lift.lift-P} \textbf{(a)}. \medskip
 
 \textbf{(b)} We have%
 \[
@@ -5601,13 +5650,15 @@ $P\in\mathbb{F}_{q}\left[  T\right]  $. Let $k$ be a positive integer.
 Let $a$ and $b$ be two elements of $A$ such that $a\equiv b\operatorname{mod}%
 P^{k}A$.
 
-\textbf{(a)} We have $F^{\deg\left(  P^{\ell}\right)  }a\equiv F^{\deg\left(
-P^{\ell}\right)  }b\operatorname{mod}P^{k+\ell}A$ for every $\ell\in
-\mathbb{N}$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $F^{\deg\left(  P^{\ell}\right)  }a\equiv
+F^{\deg\left(  P^{\ell}\right)  }b\operatorname{mod}P^{k+\ell}A$ for every
+$\ell\in\mathbb{N}$.
 
-\textbf{(b)} We have $\left(  \operatorname*{Carl}\left(  P^{\ell}\right)
-\right)  a\equiv\left(  \operatorname*{Carl}\left(  P^{\ell}\right)  \right)
-b\operatorname{mod}P^{k+\ell}A$ for every $\ell\in\mathbb{N}$.
+\item[\textbf{(b)}] We have $\left(  \operatorname*{Carl}\left(  P^{\ell
+}\right)  \right)  a\equiv\left(  \operatorname*{Carl}\left(  P^{\ell}\right)
+\right)  b\operatorname{mod}P^{k+\ell}A$ for every $\ell\in\mathbb{N}$.
+\end{enumerate}
 \end{corollary}
 
 \begin{proof}
@@ -5653,7 +5704,7 @@ F^{\deg\left(  P^{L+1}\right)  }a\equiv F^{\deg\left(  P^{L+1}\right)
 \]
 In other words, Corollary \ref{cor.F.lift.lift-Pl} \textbf{(a)} holds for
 $\ell=L+1$. This completes the induction step. The induction proof of
-Corollary \ref{cor.F.lift.lift-Pl} \textbf{(a)} is thus finished.
+Corollary \ref{cor.F.lift.lift-Pl} \textbf{(a)} is thus finished. \medskip
 
 \textbf{(b)} We can prove Corollary \ref{cor.F.lift.lift-Pl} \textbf{(b)} by
 induction over $\ell$:
@@ -5730,13 +5781,15 @@ polynomial in $\mathbb{F}_{q}\left[  T\right]  $.
 Let $a$ and $b$ be two elements of $A$ such that $a\equiv b\operatorname{mod}%
 \pi A$.
 
-\textbf{(a)} We have $F^{\deg N}a\equiv F^{\deg N}b\operatorname{mod}%
+\begin{enumerate}
+\item[\textbf{(a)}] We have $F^{\deg N}a\equiv F^{\deg N}b\operatorname{mod}%
 \pi^{v_{\pi}\left(  N\right)  +1}A$. (Here, $F^{\deg N}$ is understood to mean
 $0$ when $N=0$.)
 
-\textbf{(b)} We have $\left(  \operatorname*{Carl}N\right)  a\equiv\left(
-\operatorname*{Carl}N\right)  b\operatorname{mod}\pi^{v_{\pi}\left(  N\right)
-+1}A$.
+\item[\textbf{(b)}] We have $\left(  \operatorname*{Carl}N\right)
+a\equiv\left(  \operatorname*{Carl}N\right)  b\operatorname{mod}\pi^{v_{\pi
+}\left(  N\right)  +1}A$.
+\end{enumerate}
 \end{corollary}
 
 \begin{proof}
@@ -5755,7 +5808,7 @@ Consider this $M$.
 Proposition \ref{prop.F.lift.FPA} \textbf{(b)} (applied to $P=\pi^{1+\ell}$)
 shows that the $\mathbb{F}_{q}$-vector subspace $\pi^{1+\ell}A$ of $A$ is a
 left $\mathcal{F}$-submodule of $A$. Hence, $\mathcal{F}\cdot\pi^{1+\ell
-}A\subseteq\pi^{1+\ell}A$.
+}A\subseteq\pi^{1+\ell}A$. \medskip
 
 \textbf{(a)} From $N=M\pi^{\ell}$, we obtain $\deg N=\deg\left(  M\pi^{\ell
 }\right)  =\deg M+\deg\left(  \pi^{\ell}\right)  $, so that $F^{\deg
@@ -5780,7 +5833,7 @@ In other words, $F^{\deg N}a\equiv F^{\deg N}b\operatorname{mod}\pi^{1+\ell}%
 A$. Since $1+\underbrace{\ell}_{=v_{\pi}\left(  N\right)  }=1+v_{\pi}\left(
 N\right)  =v_{\pi}\left(  N\right)  +1$, this rewrites as $F^{\deg N}a\equiv
 F^{\deg N}b\operatorname{mod}\pi^{v_{\pi}\left(  N\right)  +1}A$. This proves
-Corollary \ref{cor.F.lift.lift-all} \textbf{(a)}.
+Corollary \ref{cor.F.lift.lift-all} \textbf{(a)}. \medskip
 
 \textbf{(b)} From $N=M\pi^{\ell}$, we obtain $\operatorname*{Carl}%
 N=\operatorname*{Carl}\left(  M\pi^{\ell}\right)  =\left(
@@ -5819,7 +5872,7 @@ N\right)  a\equiv\left(  \operatorname*{Carl}N\right)  b\operatorname{mod}%
 Each of the two parts of Corollary \ref{cor.F.lift.lift-all} can be viewed as
 an analogue of the classical \textquotedblleft exponent lifting
 lemma\textquotedblright\ \cite[version with solutions (ancillary file),
-(12.68.8)]{reiner-hopf}.
+(13.84.8)]{reiner-hopf}.
 
 \subsection{The Chinese Remainder Theorem}
 
@@ -5831,17 +5884,19 @@ $A$-module. Let $N\in\mathbb{N}$. Let $I_{1},I_{2},\ldots,I_{N}$ be $N$ ideals
 of $A$. Assume that $I_{i}+I_{j}=A$ for any two elements $i$ and $j$ of
 $\left\{  1,2,\ldots,N\right\}  $ satisfying $i<j$.
 
-\textbf{(a)} We have $I_{1}I_{2}\cdots I_{N}\cdot M=I_{1}M\cap I_{2}%
-M\cap\cdots\cap I_{N}M$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $I_{1}I_{2}\cdots I_{N}\cdot M=I_{1}M\cap
+I_{2}M\cap\cdots\cap I_{N}M$.
 
-\textbf{(b)} The canonical $A$-module homomorphism
+\item[\textbf{(b)}] The canonical $A$-module homomorphism
 \begin{align*}
 M/\left(  I_{1}I_{2}\cdots I_{N}\cdot M\right)   &  \rightarrow\prod
 \limits_{k=1}^{N}\left(  M/I_{k}M\right)  ,\\
-m+I_{1}I_{2}\cdots I_{N}\cdot M  &  \mapsto\left(  m+I_{1}M,m+I_{2}%
+m+I_{1}I_{2}\cdots I_{N}\cdot M &  \mapsto\left(  m+I_{1}M,m+I_{2}%
 M,\ldots,m+I_{N}M\right)
 \end{align*}
 is well-defined and an $A$-module isomorphism.
+\end{enumerate}
 \end{theorem}
 
 Theorem \ref{thm.CRT.dg-witt5c} is precisely \cite[Theorem 1 \textbf{(a)} and
@@ -5857,21 +5912,23 @@ ideal of $A$. Assume that the ideals $I_{s}$ of $A$ are \textit{comaximal};
 this means that every two distinct elements $s$ and $t$ of $\mathbf{S}$
 satisfy $I_{s}+I_{t}=A$. Then:
 
-\textbf{(a)} We have
+\begin{enumerate}
+\item[\textbf{(a)}] We have
 \[
 \left(  \prod\limits_{s\in\mathbf{S}}I_{s}\right)  \cdot M=\bigcap
 _{s\in\mathbf{S}}\left(  I_{s}M\right)  .
 \]
 
 
-\textbf{(b)} The canonical $A$-module homomorphism
+\item[\textbf{(b)}] The canonical $A$-module homomorphism
 \begin{align*}
 M/\left(  \left(  \prod\limits_{s\in\mathbf{S}}I_{s}\right)  \cdot M\right)
 &  \rightarrow\prod\limits_{s\in\mathbf{S}}\left(  M/I_{s}M\right)  ,\\
-m+\left(  \prod\limits_{s\in\mathbf{S}}I_{s}\right)  \cdot M  &
-\mapsto\left(  m+I_{s}M\right)  _{s\in\mathbf{S}}%
+m+\left(  \prod\limits_{s\in\mathbf{S}}I_{s}\right)  \cdot M &  \mapsto\left(
+m+I_{s}M\right)  _{s\in\mathbf{S}}%
 \end{align*}
 is well-defined and an $A$-module isomorphism.
+\end{enumerate}
 \end{theorem}
 
 \begin{proof}
@@ -5917,8 +5974,9 @@ $a$ and $b$.
 
 The unity $1$ of the ring $R=\mathbb{F}\left[  T\right]  $ satisfies
 \[
-1=as^{n}+bt^{m}=s^{n}\underbrace{a}_{\in\mathbb{F}\left[  T\right]  =R}%
-+t^{m}\underbrace{b}_{\in\mathbb{F}\left[  T\right]  =R}\in s^{n}R+t^{m}R.
+1=as^{n}+bt^{m}=s^{n}\underbrace{a}_{\in\mathbb{F}\left[  T\right]
+=R}+\,t^{m}\underbrace{b}_{\in\mathbb{F}\left[  T\right]  =R}\in s^{n}%
+R+t^{m}R.
 \]
 But $s^{n}R+t^{m}R$ is an ideal of $R$ (since $s^{n}R$ and $t^{m}R$ are ideals
 of $R$). This ideal $s^{n}R+t^{m}R$ contains $1$ (since $1\in s^{n}R+t^{m}R$),
@@ -6001,7 +6059,7 @@ A=\bigcap_{\pi\in\operatorname*{PF}P}\pi^{v_{\pi}\left(  P\right)  }A
 \bigcap_{\pi\in\operatorname*{PF}P}\pi^{v_{\pi}\left(  P\right)
 }A=\underbrace{\left(  \prod\limits_{s\in\operatorname*{PF}P}I_{s}\right)
 }_{\substack{=P\cdot\mathbb{F}_{q}\left[  T\right]  \\\text{(by
-(\ref{pf.cor.CRT.FqT.2}))}}}\cdot A=P\cdot\underbrace{\mathbb{F}_{q}\left[
+(\ref{pf.cor.CRT.FqT.2}))}}}\cdot\,A=P\cdot\underbrace{\mathbb{F}_{q}\left[
 T\right]  \cdot A}_{=A}=PA.
 \]
 This proves Corollary \ref{cor.CRT.FqT}.
@@ -6016,13 +6074,14 @@ finite set. For every $s\in\mathbf{S}$, let $I_{s}$ be an ideal of $A$. Assume
 that the ideals $I_{s}$ of $A$ are \textit{comaximal}; this means that every
 two distinct elements $s$ and $t$ of $\mathbf{S}$ satisfy $I_{s}+I_{t}=A$. Then:
 
-\textbf{(a)} We have
+\begin{enumerate}
+\item[\textbf{(a)}] We have
 \[
 \prod\limits_{s\in\mathbf{S}}I_{s}=\bigcap_{s\in\mathbf{S}}I_{s}.
 \]
 
 
-\textbf{(b)} The canonical $A$-algebra homomorphism
+\item[\textbf{(b)}] The canonical $A$-algebra homomorphism
 \[
 A/\left(  \prod\limits_{s\in\mathbf{S}}I_{s}\right)  \rightarrow
 \prod\limits_{s\in\mathbf{S}}\left(  A/I_{s}\right)
@@ -6030,6 +6089,7 @@ A/\left(  \prod\limits_{s\in\mathbf{S}}I_{s}\right)  \rightarrow
 a+I_{s}\right)  _{s\in\mathbf{S}}%
 \]
 is well-defined and an $A$-algebra isomorphism.
+\end{enumerate}
 \end{theorem}
 
 Theorem \ref{thm.CRT.ring} can easily be derived by applying Theorem
@@ -6075,17 +6135,19 @@ T\right]  $ be a monic irreducible polynomial. Let $n$ be a positive integer.
 Let $B$ be the ring $\mathbb{F}\left[  T\right]  /s^{n}\mathbb{F}\left[
 T\right]  $. Then:
 
-\textbf{(a)} We have $B^{\times}=B\setminus sB$. (Here, $B^{\times}$ denotes
-the group of units of the ring $B$.)
+\begin{enumerate}
+\item[\textbf{(a)}] We have $B^{\times}=B\setminus sB$. (Here, $B^{\times}$
+denotes the group of units of the ring $B$.)
 
-\textbf{(b)} We have $sB\cong\mathbb{F}\left[  T\right]  /s^{n-1}%
+\item[\textbf{(b)}] We have $sB\cong\mathbb{F}\left[  T\right]  /s^{n-1}%
 \mathbb{F}\left[  T\right]  $ as $\mathbb{F}$-vector spaces.
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
 [Proof of Proposition \ref{prop.FT.modsn}.]For every $a\in\mathbb{F}\left[
 T\right]  $, we let $\overline{a}$ denote the canonical projection of $a$ on
-$\mathbb{F}\left[  T\right]  /s^{n}\mathbb{F}\left[  T\right]  =B$.
+$\mathbb{F}\left[  T\right]  /s^{n}\mathbb{F}\left[  T\right]  =B$. \medskip
 
 \textbf{(a)} We shall prove the inclusions $B^{\times}\subseteq B\setminus sB$
 and $B\setminus sB\subseteq B^{\times}$ separately:
@@ -6159,7 +6221,7 @@ each $b\in B\setminus sB$. In other words, $B\setminus sB\subseteq B^{\times}$.
 
 Combining the two relations $B^{\times}\subseteq B\setminus sB$ and
 $B\setminus sB\subseteq B^{\times}$, we obtain $B^{\times}=B\setminus sB$.
-Thus, Proposition \ref{prop.FT.modsn} \textbf{(a)} is proven.
+Thus, Proposition \ref{prop.FT.modsn} \textbf{(a)} is proven. \medskip
 
 \textbf{(b)} Let $\rho$ be the map $\mathbb{F}\left[  T\right]  \rightarrow
 sB,\ f\mapsto s\overline{f}$. It is straightforward to see that this map
@@ -6890,20 +6952,22 @@ citing a well-known combinatorial fact:
 \begin{lemma}
 \label{lem.moebius-Q.Z}Let $Z$ be a finite set.
 
-\textbf{(a)} We have%
+\begin{enumerate}
+\item[\textbf{(a)}] We have%
 \[
 \sum_{I\subseteq Z}\left(  -1\right)  ^{\left\vert I\right\vert }=\left[
 Z=\varnothing\right]  .
 \]
 
 
-\textbf{(b)} Let $R$ be a commutative ring. Let $r_{i}$ be an element of $R$
-for each $i\in Z$. Then,%
+\item[\textbf{(b)}] Let $R$ be a commutative ring. Let $r_{i}$ be an element
+of $R$ for each $i\in Z$. Then,%
 \[
-\sum_{I\subseteq Z}\prod_{i\in I}r_{i}=\prod_{i\in Z}\left(  1+r_{i}\right)
-.
+\sum_{I\subseteq Z}\ \ \prod_{i\in I}r_{i}=\prod_{i\in Z}\left(
+1+r_{i}\right)  .
 \]
 
+\end{enumerate}
 \end{lemma}
 
 \begin{proof}
@@ -6929,7 +6993,7 @@ $.
 
 \begin{proof}
 [Proof of Proposition \ref{prop.moebius-Q.sum}.](This proof is a carbon copy
-of \cite[proof of (12.68.3)]{reiner-hopf}, with minor changes.)
+of \cite[proof of (13.84.3)]{reiner-hopf}, with minor changes.)
 
 Let $M=P_{1}^{a_{1}}P_{2}^{a_{2}}\cdots P_{k}^{a_{k}}$ be the factorization of
 $M$ into monic irreducible polynomials, with all of $a_{1},a_{2},\ldots,a_{k}$
@@ -7044,14 +7108,16 @@ Next come some simple properties of $\varphi_{C}$:
 \begin{proposition}
 \label{prop.phiC-Q.formula}Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$.
 
-\textbf{(a)} We have $\varphi_{C}\left(  M\right)  \in\mathbb{F}_{q}\left[
-T\right]  _{+}$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $\varphi_{C}\left(  M\right)  \in\mathbb{F}%
+_{q}\left[  T\right]  _{+}$.
 
-\textbf{(b)} We have $\varphi_{C}\left(  M\right)  =M\prod\limits_{\pi
-\in\operatorname*{PF}M}\left(  1-\dfrac{1}{\pi}\right)  $.
+\item[\textbf{(b)}] We have $\varphi_{C}\left(  M\right)  =M\prod
+\limits_{\pi\in\operatorname*{PF}M}\left(  1-\dfrac{1}{\pi}\right)  $.
 
-\textbf{(c)} We have $\varphi_{C}\left(  M\right)  =\sum_{D\mid M}D\mu\left(
-\dfrac{M}{D}\right)  $.
+\item[\textbf{(c)}] We have $\varphi_{C}\left(  M\right)  =\sum_{D\mid M}%
+D\mu\left(  \dfrac{M}{D}\right)  $.
+\end{enumerate}
 \end{proposition}
 
 \begin{proof}
@@ -7069,7 +7135,7 @@ T^{d}\operatorname{mod}V_{d}.$
 
 If $D$ is a monic divisor of $M$ satisfying $D\neq1$, then
 \begin{equation}
-\mu\left(  D\right)  \dfrac{M}{D}\equiv0\operatorname{mod}V_{d}
+\mu\left(  D\right)  \dfrac{M}{D}\equiv0\operatorname{mod}V_{d}%
 \label{pf.prop.phiC-Q.formula.a.1}%
 \end{equation}
 \footnote{\textit{Proof of (\ref{pf.prop.phiC-Q.formula.a.1}):} Let $D$ be a
@@ -7098,7 +7164,7 @@ T^{d}\operatorname{mod}V_{d}}+\sum\limits_{\substack{D\mid M;\\D\neq
 1}}\underbrace{\mu\left(  D\right)  \dfrac{M}{D}}_{\substack{\equiv
 0\operatorname{mod}V_{d}\\\text{(by (\ref{pf.prop.phiC-Q.formula.a.1}))}}}\\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we have split off the addend for
-}D=1\text{ from the sum}\right) \\
+}D=1\text{ from the sum}\right)  \\
 &  \equiv T^{d}+\underbrace{\sum\limits_{\substack{D\mid M;\\D\neq1}}0}%
 _{=0}=T^{d}\operatorname{mod}V_{d}.
 \end{align*}
@@ -7109,7 +7175,7 @@ $\mathbb{F}_{q}\left[  T\right]  $ of degree $d$ are precisely the polynomials
 in $\mathbb{F}_{q}\left[  T\right]  $ that are congruent to $T^{d}$ modulo
 $V_{d}$). Hence, $\varphi_{C}\left(  M\right)  \in\mathbb{F}_{q}\left[
 T\right]  _{+}$. This proves Proposition \ref{prop.phiC-Q.formula}
-\textbf{(a)}.
+\textbf{(a)}. \medskip
 
 \textbf{(b)} Let $M=P_{1}^{a_{1}}P_{2}^{a_{2}}\cdots P_{k}^{a_{k}}$ be the
 factorization of $M$ into monic irreducible polynomials, with all of
@@ -7159,7 +7225,7 @@ I\right\vert }\\\text{(by (\ref{pf.prop.moebius-Q.sum.2}))}}}\dfrac{M}%
 \text{here, we have substituted }\prod_{i\in I}P_{i}\text{ for }D\\
 \text{due to the bijection (\ref{pf.prop.moebius-Q.sum.bij})}%
 \end{array}
-\right) \\
+\right)  \\
 &  =\sum_{I\subseteq\left\{  1,2,\ldots,k\right\}  }\underbrace{\left(
 -1\right)  ^{\left\vert I\right\vert }}_{=\prod_{i\in I}\left(  -1\right)
 }\dfrac{M}{\prod_{i\in I}P_{i}}=\sum_{I\subseteq\left\{  1,2,\ldots,k\right\}
@@ -7183,11 +7249,11 @@ T\right]  \text{,}\\Z=\left\{  1,2,\ldots,k\right\}  \text{ and }r_{i}%
 \text{since the map }\left\{  1,2,\ldots,k\right\}  \rightarrow
 \operatorname*{PF}M,\ i\mapsto P_{i}\text{ is a bijection}%
 \end{array}
-\right) \\
+\right)  \\
 &  =M\prod\limits_{\pi\in\operatorname*{PF}M}\left(  1-\dfrac{1}{\pi}\right)
 .
 \end{align*}
-This proves Proposition \ref{prop.phiC-Q.formula} \textbf{(b)}.
+This proves Proposition \ref{prop.phiC-Q.formula} \textbf{(b)}. \medskip
 
 \textbf{(c)} Let $\mathfrak{A}$ be the set of all monic divisors of $M$. Thus,
 $\sum_{D\in\mathfrak{A}}=\sum_{D\mid M}$.
@@ -7302,21 +7368,24 @@ Next, let us study the function $\varphi$:
 \begin{proposition}
 \label{prop.phi-Q.formula}Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$.
 
-\textbf{(a)} We have $\varphi\left(  M\right)  \in\mathbb{N}_{+}$.
+\begin{enumerate}
+\item[\textbf{(a)}] We have $\varphi\left(  M\right)  \in\mathbb{N}_{+}$.
 
-\textbf{(b)} We have $\varphi\left(  M\right)  =q^{\deg M}\prod\limits_{\pi
-\in\operatorname*{PF}M}\left(  1-\dfrac{1}{q^{\deg\pi}}\right)  $.
+\item[\textbf{(b)}] We have $\varphi\left(  M\right)  =q^{\deg M}%
+\prod\limits_{\pi\in\operatorname*{PF}M}\left(  1-\dfrac{1}{q^{\deg\pi}%
+}\right)  $.
 
-\textbf{(c)} We have $\varphi\left(  M\right)  \equiv\mu\left(  M\right)
-\operatorname{mod}p$.
+\item[\textbf{(c)}] We have $\varphi\left(  M\right)  \equiv\mu\left(
+M\right)  \operatorname{mod}p$.
 
-\textbf{(d)} We have $\varphi\left(  M\right)  =\mu\left(  M\right)  $ in
-$\mathbb{F}_{q}$.
+\item[\textbf{(d)}] We have $\varphi\left(  M\right)  =\mu\left(  M\right)  $
+in $\mathbb{F}_{q}$.
 
-\textbf{(e)} Let $A$ be the ring $\mathbb{F}_{q}\left[  T\right]  $. For any
-ring $B$, we let $B^{\times}$ denote the group of units of $B$. Then,
+\item[\textbf{(e)}] Let $A$ be the ring $\mathbb{F}_{q}\left[  T\right]  $.
+For any ring $B$, we let $B^{\times}$ denote the group of units of $B$. Then,
 $\varphi\left(  M\right)  =\left\vert \left(  A/MA\right)  ^{\times
 }\right\vert $.
+\end{enumerate}
 \end{proposition}
 
 Proposition \ref{prop.phi-Q.formula} \textbf{(e)} is used as a definition of
@@ -7385,7 +7454,7 @@ P_{i}\right)  }}\\\text{(by (\ref{pf.prop.phi-Q.formula.b.qdeg}))}}}\\
 \text{here, we have substituted }\prod_{i\in I}P_{i}\text{ for }D\\
 \text{due to the bijection (\ref{pf.prop.moebius-Q.sum.bij})}%
 \end{array}
-\right) \\
+\right)  \\
 &  =\sum_{I\subseteq\left\{  1,2,\ldots,k\right\}  }\underbrace{\left(
 -1\right)  ^{\left\vert I\right\vert }}_{=\prod_{i\in I}\left(  -1\right)
 }\dfrac{q^{\deg M}}{\prod_{i\in I}q^{\deg\left(  P_{i}\right)  }}%
@@ -7413,11 +7482,11 @@ P_{i}\right)  }}\text{)}}}\\
 \text{since the map }\left\{  1,2,\ldots,k\right\}  \rightarrow
 \operatorname*{PF}M,\ i\mapsto P_{i}\text{ is a bijection}%
 \end{array}
-\right) \\
+\right)  \\
 &  =q^{\deg M}\prod_{\pi\in\operatorname*{PF}M}\left(  1-\dfrac{1}{q^{\deg\pi
 }}\right)  .
 \end{align*}
-This proves Proposition \ref{prop.phi-Q.formula} \textbf{(b)}.
+This proves Proposition \ref{prop.phi-Q.formula} \textbf{(b)}. \medskip
 
 \textbf{(a)} The definition of $\varphi$ yields $\varphi\left(  M\right)
 =\sum\limits_{D\mid M}\mu\left(  D\right)  q^{\deg\left(  M/D\right)  }%
@@ -7438,12 +7507,12 @@ Proposition \ref{prop.phi-Q.formula} \textbf{(b)} yields%
 \]
 Combining this with $\varphi\left(  M\right)  \in\mathbb{Z}$, we find that
 $\varphi\left(  M\right)  \in\mathbb{N}_{+}$. This proves Proposition
-\ref{prop.phi-Q.formula} \textbf{(a)}.
+\ref{prop.phi-Q.formula} \textbf{(a)}. \medskip
 
 \textbf{(c)} If $D$ is a monic divisor of $M$ satisfying $D\neq M$, then
 \begin{equation}
-\mu\left(  D\right)  q^{\deg\left(  M/D\right)  }\equiv0\operatorname{mod}p
-\label{pf.prop.phi-Q.formula.c.1}%
+\mu\left(  D\right)  q^{\deg\left(  M/D\right)  }\equiv0\operatorname{mod}%
+p\label{pf.prop.phi-Q.formula.c.1}%
 \end{equation}
 \footnote{\textit{Proof of (\ref{pf.prop.phi-Q.formula.c.1}):} Let $D$ be a
 monic divisor of $M$ satisfying $D\neq M$. From $M\neq D$, we obtain
@@ -7469,19 +7538,19 @@ M/M\right)  }}_{\substack{=q^{0}\\\text{(since }\deg\left(  M/M\right)
 \left(  D\right)  q^{\deg\left(  M/D\right)  }}_{\substack{\equiv
 0\operatorname{mod}p\\\text{(by (\ref{pf.prop.phi-Q.formula.c.1}))}}}\\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we have split off the addend for
-}D=M\text{ from the sum}\right) \\
+}D=M\text{ from the sum}\right)  \\
 &  \equiv\mu\left(  M\right)  \underbrace{q^{0}}_{=1}+\underbrace{\sum
 \limits_{\substack{D\mid M;\\D\neq M}}0}_{=0}=\mu\left(  M\right)
 \operatorname{mod}p.
 \end{align*}
-This proves Proposition \ref{prop.phi-Q.formula} \textbf{(c)}.
+This proves Proposition \ref{prop.phi-Q.formula} \textbf{(c)}. \medskip
 
 \textbf{(d)} Proposition \ref{prop.phi-Q.formula} \textbf{(c)} shows that
 $\varphi\left(  M\right)  \equiv\mu\left(  M\right)  \operatorname{mod}p$.
 Hence, $\varphi\left(  M\right)  =\mu\left(  M\right)  $ holds in any field of
 characteristic $p$. In particular, $\varphi\left(  M\right)  =\mu\left(
 M\right)  $ holds in $\mathbb{F}_{q}$ (since $\mathbb{F}_{q}$ is a field of
-characteristic $p$).
+characteristic $p$). \medskip
 
 \textbf{(e)} Let us first observe two general facts:
 
@@ -7668,7 +7737,7 @@ Proposition \ref{prop.phi-Q.formula} \textbf{(e)}.
 \end{proof}
 
 Finally, here is an identity that connects the functions $\mu$ and
-$\varphi_{C}$ (an analogue of \cite[(12.68.6)]{reiner-hopf}):
+$\varphi_{C}$ (an analogue of \cite[(13.84.6)]{reiner-hopf}):
 
 \begin{proposition}
 \label{prop.phiC-Q.andmu}Let $M\in\mathbb{F}_{q}\left[  T\right]  _{+}$. Then,%
@@ -8911,24 +8980,27 @@ _{q}$-vector space $A$ by $\varphi_{P}=\operatorname*{id}$.
 
 Fix a polynomial $Q\in\mathbb{F}_{q}\left[  T\right]  $.
 
-\textbf{(a)} The three Assumptions 1, 2 and 3 of Theorem \ref{thm.F.gW} are satisfied.
+\begin{enumerate}
+\item[\textbf{(a)}] The three Assumptions 1, 2 and 3 of Theorem \ref{thm.F.gW}
+are satisfied.
 
-\textbf{(b)} The assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$,
+\item[\textbf{(b)}] The assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$,
 $\mathcal{D}_{2}$, $\mathcal{E}_{1}$, $\mathcal{F}_{1}$, $\mathcal{G}_{1}$,
 and $\mathcal{G}_{2}$ of Theorem \ref{thm.F.gW} are satisfied for the family
 $\left(  b_{P}\right)  _{P\in N}=\left(  F^{\deg P}Q\right)  _{P\in N}\in
 A^{N}$.
 
-\textbf{(c)} The assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$,
+\item[\textbf{(c)}] The assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$,
 $\mathcal{D}_{2}$, $\mathcal{E}_{1}$, $\mathcal{F}_{1}$, $\mathcal{G}_{1}$,
 and $\mathcal{G}_{2}$ of Theorem \ref{thm.F.gW} are satisfied for the family
 $\left(  b_{P}\right)  _{P\in N}=\left(  \left(  \operatorname*{Carl}P\right)
 Q\right)  _{P\in N}\in A^{N}$.
 
-\textbf{(d)} The assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$,
+\item[\textbf{(d)}] The assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$,
 $\mathcal{D}_{2}$, $\mathcal{E}_{1}$, $\mathcal{F}_{1}$, $\mathcal{G}_{1}$,
 and $\mathcal{G}_{2}$ of Theorem \ref{thm.F.gW} are satisfied for the family
 $\left(  b_{P}\right)  _{P\in N}=\left(  Q\right)  _{P\in N}\in A^{N}$.
+\end{enumerate}
 \end{proposition}
 
 Before we prove this proposition, let us get two simple lemmas out of our way:
@@ -8979,12 +9051,14 @@ an $\mathcal{F}$-module (according to Convention \ref{conv.F.acts-on-commalg}%
 ). Let $\pi$ be a monic irreducible polynomial in $\mathbb{F}_{q}\left[
 T\right]  $. Let $P\in A$.
 
-\textbf{(a)} We have $\left(  \operatorname*{Carl}\pi\right)  P\equiv
+\begin{enumerate}
+\item[\textbf{(a)}] We have $\left(  \operatorname*{Carl}\pi\right)  P\equiv
 P\operatorname{mod}\pi A$. Here, $\left(  \operatorname*{Carl}\pi\right)  P$
 denotes the image of $P$ under the action of $\operatorname*{Carl}\pi
 \in\mathcal{F}$ on the $\mathcal{F}$-module $A$.
 
-\textbf{(b)} We have $F^{\deg\pi}P\equiv P\operatorname{mod}\pi A$.
+\item[\textbf{(b)}] We have $F^{\deg\pi}P\equiv P\operatorname{mod}\pi A$.
+\end{enumerate}
 \end{lemma}
 
 \begin{proof}
@@ -8999,7 +9073,7 @@ Now, (\ref{eq.prop.F.acts-on-commalg.Fk.eq}) (applied to $k=d$ and $m=P$)
 yields $F^{d}\cdot P=P^{q^{d}}\equiv P\operatorname{mod}\pi A$. Since
 $d=\deg\pi$, this rewrites as $F^{\deg\pi}\cdot P\equiv P\operatorname{mod}\pi
 A$. In other words, $F^{\deg\pi}P\equiv P\operatorname{mod}\pi A$. This proves
-Lemma \ref{lem.F.gW.example1.lem} \textbf{(b)}.
+Lemma \ref{lem.F.gW.example1.lem} \textbf{(b)}. \medskip
 
 \textbf{(a)} Corollary \ref{cor.F.u(pi).mod} (applied to $a=P$) yields
 $\left(  \operatorname*{Carl}\pi\right)  P\equiv F^{\deg\pi}P\equiv
@@ -9045,7 +9119,7 @@ and thus $\varphi_{\pi}\left(  a\right)  =\operatorname*{id}\left(  a\right)
 of Theorem \ref{thm.F.gW}.
 
 Thus, all three Assumptions 1, 2 and 3 of Theorem \ref{thm.F.gW} are
-satisfied. This proves Proposition \ref{prop.F.gW.example1} \textbf{(a)}.
+satisfied. This proves Proposition \ref{prop.F.gW.example1} \textbf{(a)}. \medskip
 
 \textbf{(b)} Define a family $\left(  b_{P}\right)  _{P\in N}\in A^{N}$ by
 $\left(  b_{P}\right)  _{P\in N}=\left(  F^{\deg P}Q\right)  _{P\in N}$. Thus,%
@@ -9087,7 +9161,7 @@ F^{\deg\left(  P/\pi\right)  }F^{\deg\pi}Q\equiv F^{\deg\left(  P/\pi\right)
 \]
 Since%
 \begin{align*}
-F^{\deg\left(  P/\pi\right)  }F^{\deg\pi}  &  =F^{\deg\left(  P/\pi\right)
+F^{\deg\left(  P/\pi\right)  }F^{\deg\pi} &  =F^{\deg\left(  P/\pi\right)
 +\deg\pi}=F^{\deg P}\\
 &  \ \ \ \ \ \ \ \ \ \ \left(  \text{since }\deg\left(  P/\pi\right)  +\deg
 \pi=\deg\underbrace{\left(  \left(  P/\pi\right)  \pi\right)  }_{=P}=\deg
@@ -9096,8 +9170,9 @@ P\right)
 and
 \[
 \underbrace{v_{\pi}\left(  P/\pi\right)  }_{=v_{\pi}\left(  P\right)  -v_{\pi
-}\left(  \pi\right)  }+1=v_{\pi}\left(  P\right)  -\underbrace{v_{\pi}\left(
-\pi\right)  }_{=1}+1=v_{\pi}\left(  P\right)  -1+1=v_{\pi}\left(  P\right)  ,
+}\left(  \pi\right)  }+\,1=v_{\pi}\left(  P\right)  -\underbrace{v_{\pi
+}\left(  \pi\right)  }_{=1}+\,1=v_{\pi}\left(  P\right)  -1+1=v_{\pi}\left(
+P\right)  ,
 \]
 this rewrites as
 \[
@@ -9118,7 +9193,7 @@ assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$, $\mathcal{D}_{2}$,
 $\mathcal{E}_{1}$, $\mathcal{F}_{1}$, $\mathcal{G}_{1}$, and $\mathcal{G}_{2}$
 of Theorem \ref{thm.F.gW} are satisfied (since Theorem \ref{thm.F.gW} says
 that these assertions are equivalent). This proves Proposition
-\ref{prop.F.gW.example1} \textbf{(b)}.
+\ref{prop.F.gW.example1} \textbf{(b)}. \medskip
 
 \textbf{(c)} Define a family $\left(  b_{P}\right)  _{P\in N}\in A^{N}$ by
 $\left(  b_{P}\right)  _{P\in N}=\left(  \left(  \operatorname*{Carl}P\right)
@@ -9204,7 +9279,7 @@ assertions $\mathcal{C}_{1}$, $\mathcal{D}_{1}$, $\mathcal{D}_{2}$,
 $\mathcal{E}_{1}$, $\mathcal{F}_{1}$, $\mathcal{G}_{1}$, and $\mathcal{G}_{2}$
 of Theorem \ref{thm.F.gW} are satisfied (since Theorem \ref{thm.F.gW} says
 that these assertions are equivalent). This proves Proposition
-\ref{prop.F.gW.example1} \textbf{(c)}.
+\ref{prop.F.gW.example1} \textbf{(c)}. \medskip
 
 \textbf{(d)} Define a family $\left(  b_{P}\right)  _{P\in N}\in A^{N}$ by
 $\left(  b_{P}\right)  _{P\in N}=\left(  Q\right)  _{P\in N}$. Thus,%
@@ -9907,8 +9982,8 @@ Subtraction of $\left(  F+T\right)  x_{1}F$ turns this into
 Tx_{T}F  &  =F\left(  \left(  F+T\right)  x_{1}+Tx_{T}\right)  -\left(
 F+T\right)  x_{1}F\\
 &  =FFx_{1}+\underbrace{FT}_{=T^{q}F}x_{1}+\underbrace{FT}_{=T^{q}F}%
-x_{T}-F\underbrace{x_{1}T}_{\substack{=Fx_{1}\\\text{(since }x_{1}\text{ is
-central)}}}-Tx_{1}F\\
+x_{T}-F\underbrace{x_{1}F}_{\substack{=Fx_{1}\\\text{(since }x_{1}\text{ is
+central)}}}-\,Tx_{1}F\\
 &  =FFx_{1}+T^{q}Fx_{1}+T^{q}Fx_{T}-FFx_{1}-Tx_{1}F=T^{q}Fx_{1}+T^{q}%
 Fx_{T}-Tx_{1}F\\
 &  =T\left(  T^{q-1}Fx_{1}+T^{q-1}Fx_{T}-x_{1}F\right)  .
@@ -9916,7 +9991,8 @@ Fx_{T}-Tx_{1}F\\
 Cancelling $T$, we obtain%
 \[
 x_{T}F=T^{q-1}Fx_{1}+T^{q-1}Fx_{T}-\underbrace{x_{1}F}_{\substack{=Fx_{1}%
-\\\text{(since }x_{1}\text{ is central)}}}T^{q-1}Fx_{1}+T^{q-1}Fx_{T}-Fx_{1}.
+\\\text{(since }x_{1}\text{ is central)}}} =T^{q-1}Fx_{1}+T^{q-1}Fx_{T}%
+-Fx_{1}.
 \]
 This simplifies to \fbox{$x_{T}F=\left(  T^{q-1}-1\right)  Fx_{1}%
 +T^{q-1}Fx_{T}$}.
@@ -10208,7 +10284,7 @@ $A=\mathbb{F}_{q}\left(  T\right)  $, $n=m$, $P=\dfrac{E_{j}\left(
 X+T^{m}\right)  }{X+T^{m}}$ and $e_{i}=T^{i-1}$, and conclude that
 \[
 \sum\limits_{\left(  \lambda_{1},\lambda_{2},...,\lambda_{m}\right)
-\in\mathbb{F}_{q}}\dfrac{E_{j}\left(  \lambda_{1}T^{0}+\lambda_{2}%
+\in\mathbb{F}_{q}^{m}}\dfrac{E_{j}\left(  \lambda_{1}T^{0}+\lambda_{2}%
 T^{1}+...+\lambda_{m}T^{m-1}+T^{m}\right)  }{\lambda_{1}T^{0}+\lambda_{2}%
 T^{1}+...+\lambda_{m}T^{m-1}+T^{m}}=0
 \]
@@ -10289,33 +10365,37 @@ arXiv:math/0407227v1.\newline\url{http://arxiv.org/abs/math/0407227v1}
 
 \bibitem {dhns}Tom Denton, Florent Hivert, Anne Schilling, Nicolas M.
 Thi\'{e}ry, \textit{On the representation theory of finite }$\mathcal{J}%
-$\textit{-trivial monoids}, arXiv:1010.3455v3. \url{http://arxiv.org/abs/1010.3455v3}
+$\textit{-trivial monoids}, arXiv:1010.3455v3. \url{http://arxiv.org/abs/1010.3455v3} \newline
+See \url{https://www.cip.ifi.lmu.de/~grinberg/algebra/monoids-errata.pdf} for unofficial errata.
 
 \bibitem {dyckerhoff}Tobias Dyckerhoff, \textit{Hall Algebras - Bonn,
-Wintersemester 14/15}, lecture notes, February 5, 2015.\newline\url{http://www.math.uni-bonn.de/people/dyckerho/notes.pdf}
+Wintersemester 14/15}, lecture notes, February 5, 2015.\newline\url{https://web.archive.org/web/20150601115158/http://www.math.uni-bonn.de/people/dyckerho/notes.pdf}
 
-\bibitem {reiner-hopf}Darij Grinberg, Victor Reiner, \textit{Hopf
-algebras in Combinatorics}, version of 11 May 2018,
-\href{http://arxiv.org/abs/1409.8356v5}{arXiv:1409.8356v5}. \newline%
-See also \url{http://www.cip.ifi.lmu.de/~grinberg/algebra/HopfComb-sols.pdf} for a version that gets updated.
+\bibitem {reiner-hopf}Darij Grinberg, Victor Reiner, \textit{Hopf algebras in
+Combinatorics}, version of 28 July 2020,
+\href{http://arxiv.org/abs/1409.8356v7}{arXiv:1409.8356v7}. \newline See also
+\url{http://www.cip.ifi.lmu.de/~grinberg/algebra/HopfComb-sols.pdf} for a
+version that gets updated.
 
 \bibitem {dg-witt5}Darij Grinberg, \textit{Witt\#5: Around the integrality
 criterion 9.93}, sidenote to Michiel Hazewinkel's \textquotedblleft Witt
-vectors. Part 1\textquotedblright.\newline\url{http://mit.edu/~darij/www/algebra/witt5.pdf}
+vectors. Part 1\textquotedblright.\newline\url{http://www.cip.ifi.lmu.de/~grinberg/algebra/witt5.pdf}
 
 \bibitem {dg-witt5c}Darij Grinberg, \textit{Witt\#5c: The Chinese Remainder
 Theorem for Modules}, sidenote to Michiel Hazewinkel's \textquotedblleft Witt
-vectors. Part 1\textquotedblright.\newline\url{http://mit.edu/~darij/www/algebra/witt5c.pdf}
+vectors. Part 1\textquotedblright.\newline\url{http://www.cip.ifi.lmu.de/~grinberg/algebra/witt5c.pdf}
 
 \bibitem {dg-witt5f}Darij Grinberg, \textit{Witt\#5f: Ghost-Witt integrality
 for binomial rings}, sidenote to Michiel Hazewinkel's \textquotedblleft Witt
-vectors. Part 1\textquotedblright.\newline\url{http://mit.edu/~darij/www/algebra/witt5f.pdf}
+vectors. Part 1\textquotedblright.\newline\url{http://www.cip.ifi.lmu.de/~grinberg/algebra/witt5f.pdf}
 
 \bibitem {hw-witt1}Michiel Hazewinkel, \textit{Witt vectors. Part 1},
-arXiv:0804.3888.\newline\url{http://arxiv.org/abs/0804.3888v1}
+arXiv:0804.3888v1.\newline\url{http://arxiv.org/abs/0804.3888v1}
 
 \bibitem {hesselholt-drw}Lars Hesselholt, \textit{The big de Rham-Witt
-complex}, Acta Math. 214 (2015), pp. 135--207.\newline A preprint is also
+complex}, Acta Math. 214 (2015), pp. 135--207.
+\url{https://doi.org/10.1007/s11511-015-0124-y}
+\newline A preprint is also
 available as arXiv:1006.3125v3: \url{http://arxiv.org/abs/1006.3125v3}
 
 \bibitem {hesselholt-witt}Lars Hesselholt, \textit{Lecture notes on Witt
@@ -10332,7 +10412,8 @@ characteristic }$p$, Trans. Amer. Math. Soc. \textbf{50} (1941), pp.
 
 \bibitem {mac-schurvar}I. G. Macdonald, \textit{Schur functions: Theme and
 variations}, S\'{e}minaire Lotharingien de Combinatoire 28, B28a
-(1992).\newline\url{http://www.emis.de/journals/SLC/opapers/s28macdonald.html}
+(1992).\newline\url{https://www.mat.univie.ac.at/~slc/opapers/s28macdonald.html}
+\newline See \url{https://www.cip.ifi.lmu.de/~grinberg/algebra/mcd-schur-errata.pdf} for unofficial errata.
 
 \bibitem {ore-pp1}Oystein Ore, \textit{On a Special Class of Polynomials},
 Trans. Amer. Math. Soc. \textbf{35} (1933), pp. 559--584.\newline\url{http://www.ams.org/journals/tran/1933-035-03/S0002-9947-1933-1501703-0/}
@@ -10343,10 +10424,10 @@ On a special class of polynomials\textquotedblright\ [Trans. Amer. Math. Soc.
 (1934), p. 275.\newline\url{http://www.ams.org/journals/tran/1934-036-02/S0002-9947-1934-1501741-9/}
 
 \bibitem {rabinoff-witt}Joseph Rabinoff, \textit{The Theory of Witt
-Vectors}.\newline\url{http://www.math.harvard.edu/~rabinoff/misc/witt.pdf}
+Vectors}.\newline\url{https://arxiv.org/abs/1409.7445v1}
 
 \bibitem {stanley-ec2}Richard Stanley, \textit{Enumerative Combinatorics,
-volume 2}, Cambridge University Press 2001.
+volume 2}, Cambridge University Press, 2nd edition 2024.
 \end{thebibliography}
 
 
