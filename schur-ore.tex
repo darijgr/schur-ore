@@ -13,7 +13,7 @@
 \usepackage{amsthm}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2960}
-%TCIDATA{LastRevised=Tuesday, August 11, 2026 00:11:58}
+%TCIDATA{LastRevised=Thursday, October 29, 2026 01:56:43}
 %TCIDATA{SuppressPackageManagement}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
@@ -189,17 +189,18 @@ Symmetric functions will only be really used in Section \ref{sect.tinfoil}.
 In \cite[\S 1--\S 2]{jb-bg1}, James Borger has generalized the notion of Witt
 vectors to a rather broad setting, which includes both the classical and the
 \textquotedblleft nested\textquotedblright\ Witt vectors. His generalization
-also includes my Carlitz-Witt functor $W_{N}$ in Theorem \ref{thm.Witt.class}
-below, namely when one takes $R=\mathbb{F}_{q}\left[  T\right]  $ and
-$E=\left\{  \text{all maximal ideals of }R\right\}  $. We have yet to fill in
-the details, but in a nutshell, the reason why our constructions are
-equivalent is that the universal property of our $W_{N}\left(  B\right)  $
-given in Corollary \ref{cor.carlitz.Witt.frob.adjoint} below is the same as
-the one for $W_{R,E}^{\operatorname*{fl}}\left(  A\right)  $ in
-\cite[Proposition 1.9 (c)]{jb-bg1} (up to technicalities). Thus, it appears
-likely that several of the results below are particular cases of results from
-\cite{jb-bg1}. Nevertheless, our approach to the Carlitz-Witt functor is
-different from Borger's, and somewhat more explicit.
+also includes my Carlitz-Witt functor $W_{N}$ in Theorem
+\ref{thm.carlitz.Witt.class} below, namely when one takes $R=\mathbb{F}%
+_{q}\left[  T\right]  $ and $E=\left\{  \text{all maximal ideals of
+}R\right\}  $. We have yet to fill in the details, but in a nutshell, the
+reason why our constructions are equivalent is that the universal property of
+our $W_{N}\left(  B\right)  $ given in Corollary
+\ref{cor.carlitz.Witt.frob.adjoint} below is the same as the one for
+$W_{R,E}^{\operatorname*{fl}}\left(  A\right)  $ in \cite[Proposition 1.9
+(c)]{jb-bg1} (up to technicalities). Thus, it appears likely that several of
+the results below are particular cases of results from \cite{jb-bg1}.
+Nevertheless, our approach to the Carlitz-Witt functor is different from
+Borger's, and somewhat more explicit.
 
 \section{\label{sect.nots}Notations}
 
@@ -346,7 +347,7 @@ defined by%
 _{+}.
 \]
 Some properties of this $\varphi_{C}$ are shown in \cite[Theorem
-4.5]{kc-carlitz}. In particular, every $M\in\mathbb{F}_{q}\left[  T\right]
+4.6]{kc-carlitz}. In particular, every $M\in\mathbb{F}_{q}\left[  T\right]
 _{+}$ satisfies $M=\sum\limits_{D\mid M}\varphi_{C}\left(  D\right)  $.
 
 \textbf{2.} The second analogue is the function $\varphi:\mathbb{F}_{q}\left[
@@ -512,7 +513,7 @@ P\right)  =P\left(  \Xi^{n}\right)  $:
 
 \begin{theorem}
 \label{thm.Witt.class}Let $N$ be a nest. There exists a unique functor
-$W_{N}:\mathbf{CRing}\rightarrow\mathbf{CRing}$ with the following two properties:
+$W_{N}:\mathbf{CRing}\rightarrow\mathbf{CRing}$ with the following three properties:
 
 \begin{enumerate}
 \item We have $W_{N}\left(  A\right)  =A^{N}$ \textbf{as a set} for every
@@ -956,7 +957,7 @@ different morphisms but they also work here.}
 \label{thm.carlitz.Witt.class}Let $N$ be a $q$-nest. There exists a unique
 functor $W_{N}:\mathbf{CRing}_{\mathbb{F}_{q}\left[  T\right]  }%
 \rightarrow\mathbf{CRing}_{\mathbb{F}_{q}\left[  T\right]  }$ with the
-following two properties:
+following three properties:
 
 \begin{enumerate}
 \item We have $W_{N}\left(  A\right)  =A^{N}$ \textbf{as a set} for every
@@ -1036,7 +1037,7 @@ Theorem \ref{thm.carlitz.gW}, we get:
 \label{thm.carlitz.Witt.class.tilde}Let $N$ be a $q$-nest. There exists a
 unique functor $\widetilde{W}_{N}:\mathbf{CRing}_{\mathbb{F}_{q}\left[
 T\right]  }\rightarrow\mathbf{CRing}_{\mathbb{F}_{q}\left[  T\right]  }$ with
-the following two properties:
+the following three properties:
 
 \begin{enumerate}
 \item We have $\widetilde{W}_{N}\left(  A\right)  =A^{N}$ \textbf{as a set}
@@ -1724,9 +1725,9 @@ r\nmid j\right)  }\right\} \\
 &  =\left\{  \left(  i,j\right)  \in\mathbb{N}^{2}\ \mid\ i=0\text{ or }r\nmid
 j\right\}  =B,
 \end{align*}
-qed.}. Given an $s\in S$, it is easy to algorithmically check whether
-$s\notin\phi\left(  \mathbb{N}^{2}\right)  $ (because of the equivalence
-$s\notin\phi\left(  \mathbb{N}^{2}\right)  \ \Longleftrightarrow
+qed.}. Given an $s\in\mathbb{N}^{2}$, it is easy to algorithmically check
+whether $s\notin\phi\left(  \mathbb{N}^{2}\right)  $ (because of the
+equivalence $s\notin\phi\left(  \mathbb{N}^{2}\right)  \ \Longleftrightarrow
 \ s\in\underbrace{\mathbb{N}^{2}\setminus\phi\left(  \mathbb{N}^{2}\right)
 }_{=B}\ \Longleftrightarrow\ s\in B$), and if $s\in\phi\left(  \mathbb{N}%
 ^{2}\right)  $, then it is easy to compute a preimage of $s$ under $\phi$
@@ -2601,7 +2602,7 @@ yields $\operatorname*{Frob}P=\left(  \underbrace{P}_{=T^{i}}\right)
 ^{q}=\left(  T^{i}\right)  ^{q}=T^{qi}$.
 
 Now, $\underbrace{F}_{=F^{1}}\underbrace{P}_{=T^{i}}=F^{1}T^{i}=T^{q^{1}%
-i}F^{1}$ (by Proposition \ref{prop.F.bases} \textbf{(a)}), so that
+i}F^{1}$ (by Proposition \ref{prop.F.bases} \textbf{(a)}), so that we have
 $FP=\underbrace{T^{q^{1}i}}_{=T^{qi}=\operatorname*{Frob}P}\underbrace{F^{1}%
 }_{=F}=\left(  \operatorname*{Frob}P\right)  F$.
 
@@ -2657,7 +2658,7 @@ uP\in P\cdot\mathcal{F}\ \ \ \ \ \ \ \ \ \ \text{for every }u\in\mathcal{F}.
 
 
 \textit{Proof of (\ref{pf.cor.F.FPF.main}):} Let $u\in\mathcal{F}$. We must
-prove the equality (\ref{pf.cor.F.FPF.main}). Since this equality is
+prove the relation (\ref{pf.cor.F.FPF.main}). Since this relation is
 $\mathbb{F}_{q}$-linear in $u$, we can WLOG assume that $u$ belongs to the
 basis $\left(  T^{j}F^{i}\right)  _{i\geq0,\ j\geq0}$ of the $\mathbb{F}_{q}%
 $-module $\mathcal{F}$. Assume this. Thus, $u=T^{j}F^{i}$ for some $\left(
@@ -2666,7 +2667,7 @@ i,j\right)  \in\mathbb{N}^{2}$. Consider this $\left(  i,j\right)  $. Now,%
 \underbrace{u}_{=T^{j}F^{i}}P=T^{j}\underbrace{F^{i}P}_{\substack{\in
 P\cdot\mathcal{F}\\\text{(by (\ref{pf.cor.F.FPF.FiP}))}}}\in\underbrace{T^{j}%
 P}_{\substack{=PT^{j}\\\text{(since }P\text{ and }T^{j}\text{ both}\\\text{lie
-in }\mathbb{F}_{q}\left[  T\right]  \text{)}}}\cdot\mathcal{F}%
+in }\mathbb{F}_{q}\left[  T\right]  \text{)}}}\cdot\,\mathcal{F}%
 =P\underbrace{T^{j}\cdot\mathcal{F}}_{\subseteq\mathcal{F}}\subseteq
 P\cdot\mathcal{F}.
 \]
@@ -2725,7 +2726,7 @@ monoid $\left(  A\left[  X\right]  ,\circ\right)  $. Moreover, $\left(
 A\left[  X\right]  _{q-\operatorname*{lin}},+,\circ\right)  $ is a
 (noncommutative) $\mathbb{F}_{q}$-algebra with unity $X$ (where the
 $\mathbb{F}_{q}$-module structure is the one obtained by restricting the
-$A\left[  X\right]  $-module structure to $\mathbb{F}_{q}$).
+$A$-module structure to $\mathbb{F}_{q}$).
 \end{enumerate}
 \end{proposition}
 
@@ -3310,7 +3311,7 @@ yields%
 f_{W,\psi}=\prod_{v\in W}\left(  X+\psi\left(  v\right)  \right)  =\prod_{w\in
 W}\left(  X+\psi\left(  w\right)  \right)  \label{pf.lem.mac1.too-early.fW}%
 \end{equation}
-(here, we renamed the summation index $v$ as $w$).
+(here, we renamed the product index $v$ as $w$).
 
 Fix some $v\in V$. If we substitute $X+\varphi\left(  v\right)  $ for $X$ on
 both sides of (\ref{pf.lem.mac1.too-early.fW}), then we obtain%
@@ -3579,13 +3580,14 @@ instead of $V$, $\varphi$ and $\chi$) shows that $f_{U\oplus W,\varphi
 }=f_{U,h\circ\gamma}\circ f_{W,\psi}$ in $A\left[  X\right]  $.
 
 But the $\mathbb{F}_{q}$-vector space $U$ is one-dimensional (since $\dim
-U=1$) and contains the nonzero vector $e$ (since $U=\mathbb{F}_{q}e\supseteq
-e$). Thus, Lemma \ref{lem.mac1.dim1} (applied to $U$ and $h\circ\gamma$
-instead of $V$ and $\varphi$) shows that $f_{U,h\circ\gamma}=X^{q}-\left(
-\left(  h\circ\gamma\right)  \left(  e\right)  \right)  ^{q-1}X$. This is
-clearly a $q$-polynomial (since $\left(  \left(  h\circ\gamma\right)  \left(
-e\right)  \right)  ^{q-1}$ is just a coefficient in $A$). In other words,
-$f_{U,h\circ\gamma}\in A\left[  X\right]  _{q-\operatorname*{lin}}$.
+U=1$) and contains the nonzero vector $e$ (since $U=\mathbb{F}_{q}e$ clearly
+contains $1e=e$). Thus, Lemma \ref{lem.mac1.dim1} (applied to $U$ and
+$h\circ\gamma$ instead of $V$ and $\varphi$) shows that $f_{U,h\circ\gamma
+}=X^{q}-\left(  \left(  h\circ\gamma\right)  \left(  e\right)  \right)
+^{q-1}X$. This is clearly a $q$-polynomial (since $\left(  \left(
+h\circ\gamma\right)  \left(  e\right)  \right)  ^{q-1}$ is just a coefficient
+in $A$). In other words, $f_{U,h\circ\gamma}\in A\left[  X\right]
+_{q-\operatorname*{lin}}$.
 
 Proposition \ref{prop.q-pol.comp.basics} \textbf{(b)} shows that $A\left[
 X\right]  _{q-\operatorname*{lin}}$ is a submonoid of the monoid $\left(
@@ -3798,9 +3800,9 @@ $t\cdot X$ for $X$ in $m$).
 left $\mathbb{F}_{q}\left[  F\right]  $-module $\mathbb{F}_{q}\left[
 T\right]  \left[  X\right]  _{q-\operatorname*{lin}}$ sends every
 $m\in\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  _{q-\operatorname*{lin}%
-}$ to $\operatorname*{Fqpol}f\circ m=f\left(  \operatorname*{Frob}%
-\nolimits_{\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  }\right)  \circ
-m$.
+}$ to $\operatorname*{Fqpol}f\circ m= \left( f\left(  \operatorname*{Frob}%
+\nolimits_{\mathbb{F}_{q}\left[  T\right]  \left[  X\right]  }\right)
+\right)  \left( m\right) $.
 \end{itemize}
 
 \begin{noncompile}
@@ -4157,10 +4159,11 @@ F\cdot m=\operatorname*{Frob}\nolimits_{A}\left(  m\right)
 is a consequence of Proposition \ref{prop.F.frobmod.cateq} \textbf{(a)}.)
 \end{proof}
 
-Restricted Lie algebras (see, e.g., \cite{jacobson-rl}) can be used as another
-source of Frobenius $\mathbb{F}_{q}\left[  T\right]  $-modules, provided they
-can be equipped with an appropriate $\mathbb{F}_{q}\left[  T\right]  $-module
-structure. We are not currently aware of specific examples of interest, however.
+Commutative restricted Lie algebras (see, e.g., \cite{jacobson-rl}) can be
+used as another source of Frobenius $\mathbb{F}_{q}\left[  T\right]
+$-modules, provided they can be equipped with an appropriate $\mathbb{F}%
+_{q}\left[  T\right]  $-module structure. We are not currently aware of
+specific examples of interest, however.
 
 \begin{condition}
 \label{conv.F.acts-on-commalg}Let $A$ be a commutative $\mathbb{F}_{q}\left[
@@ -4906,12 +4909,12 @@ This proves Proposition \ref{prop.F.u(pi).lem1} \textbf{(b)}.
 Here are some more useful lemmas:
 
 \begin{lemma}
-\label{lem.F.u(pi).dividiff}Let $\mathbb{K}$ be a commutative ring. Let
-$d\in\mathbb{N}$. Let $\pi\in\mathbb{K}\left[  T\right]  $ be a polynomial of
-degree $\leq d$. For each $i\in\mathbb{N}$, let $\pi_{i}$ be the coefficient
-of $T^{i}$ in $\pi$. For each $k\in\left\{  0,1,\ldots,d\right\}  $, define a
-polynomial $p_{k}\in\mathbb{K}\left[  T\right]  $ by $p_{k}=\sum_{i=k+1}%
-^{d}\pi_{i}T^{i-1-k}$. Then:
+\label{lem.F.u(pi).dividiff}Let $\mathbb{K}$ be a commutative ring. Let $d$ be
+a positive integer. Let $\pi\in\mathbb{K}\left[  T\right]  $ be a polynomial
+of degree $\leq d$. For each $i\in\mathbb{N}$, let $\pi_{i}$ be the
+coefficient of $T^{i}$ in $\pi$. For each $k\in\left\{  0,1,\ldots,d\right\}
+$, define a polynomial $p_{k}\in\mathbb{K}\left[  T\right]  $ by $p_{k}%
+=\sum_{i=k+1}^{d}\pi_{i}T^{i-1-k}$. Then:
 
 \begin{enumerate}
 \item[\textbf{(a)}] We have $p_{d-1}=\pi_{d}$ (a constant polynomial) and
@@ -5030,10 +5033,10 @@ $\mathbb{K}=\mathbb{F}_{q}$) yields
 _{i=0}^{d-1}p_{i}\left(  X\right)  Y^{i}=\left(  \sum_{i=0}^{d-1}p_{i}\left(
 X\right)  Y^{i}\right)  \left(  X-Y\right)
 \]
-in the ring $\mathbb{K}\left[  X,Y\right]  $. Since the two elements $1\otimes
-T$ and $\alpha$ of $\mathcal{F}_{\pi}$ commute with each other, we can
-substitute $1\otimes T$ and $\alpha$ for $X$ and $Y$ in this identity. We thus
-obtain%
+in the ring $\mathbb{F}_{q}\left[  X,Y\right]  $. Since the two elements
+$1\otimes T$ and $\alpha$ of $\mathcal{F}_{\pi}$ commute with each other, we
+can substitute $1\otimes T$ and $\alpha$ for $X$ and $Y$ in this identity. We
+thus obtain%
 \begin{align*}
 \pi\left(  1\otimes T\right)  -\pi\left(  \alpha\right)   &  =\left(
 \sum_{i=0}^{d-1}\underbrace{p_{i}\left(  1\otimes T\right)  }%
@@ -5116,7 +5119,7 @@ _{q}$-linear map $\lambda\otimes\operatorname*{id}\nolimits_{\mathcal{F}%
 _{q}\otimes\mathcal{F}\text{ with }\mathcal{F}\right)  ,
 \end{align*}
 qed.}. Now, applying the map $\lambda\otimes\operatorname*{id}%
-\nolimits_{\mathcal{F}}$ to both sides of the equality
+\nolimits_{\mathcal{F}}$ to both sides of the relation
 (\ref{pf.lem.F.u(pi).lem2.3}), we obtain%
 \[
 \left(  \lambda\otimes\operatorname*{id}\nolimits_{\mathcal{F}}\right)
@@ -5152,8 +5155,7 @@ defined as $b_{0}b_{1}\cdots b_{d-1}$. (Thus, we have defined this product
 even if the elements $b_{0},b_{1},\ldots,b_{d-1}$ do not commute.)
 
 Let $r\in\mathbb{N}$. Let $f$, $t$ and $a$ be three elements of $R$ satisfying
-$ft=t^{r}f$, $fa=af$ and $ta=at$. Let $d\in\mathbb{N}$. Then, every
-$d\in\mathbb{N}$ satisfies%
+$ft=t^{r}f$, $fa=af$ and $ta=at$. Then, every $d\in\mathbb{N}$ satisfies%
 \begin{equation}
 \prod_{k=0}^{d-1}\left(  f+t-a^{r^{k}}\right)  \equiv f^{d}\operatorname{mod}%
 \left(  t-a\right)  R. \label{eq.lem.F.u(pi).prod-deform.1}%
@@ -6203,10 +6205,10 @@ sce\operatorname{mod}s^{n}\mathbb{F}\left[  T\right]  $. In other words,
 $s^{n}\mid1-sce$. But since $n$ is positive, we have $s\mid s^{n}\mid1-sce$.
 Thus, the polynomial $1-sce$ is divisible by $s$. Also, the polynomial $sce$
 is divisible by $s$ (clearly). Hence, the sum of these two polynomials $1-sce$
-and $sce$ must also divisible by $s$. In other words, $\left(  1-sce\right)
-+sce$ is divisible by $s$. In other words, $1$ is divisible by $s$ (since
-$\left(  1-sce\right)  +sce=1$). This is clearly absurd (since $s$ is
-irreducible). Thus, we have found a contradiction. This shows that our
+and $sce$ must also be divisible by $s$. In other words, $\left(
+1-sce\right)  +sce$ is divisible by $s$. In other words, $1$ is divisible by
+$s$ (since $\left(  1-sce\right)  +sce=1$). This is clearly absurd (since $s$
+is irreducible). Thus, we have found a contradiction. This shows that our
 assumption (that $b\in sB$) was false.
 
 Hence, $b\notin sB$. Combining this with $b\in B$, we obtain $b\in B\setminus
@@ -6414,8 +6416,8 @@ Then, Assumptions 4 and 5 of Theorem \ref{thm.F.gW-general} are satisfied.
 \begin{proposition}
 \label{prop.F.gW-general.ex2}Let $N$ be a $q$-nest. Let $A$ be an
 $\mathcal{F}$-module. For every $P\in N$, let $\varphi_{P}$ be an endomorphism
-of the $\mathbb{F}_{q}$-vector space $A$. Assume that the Assumption 1 and 2
-of Theorem \ref{thm.F.gW-general} are satisfied.
+of the $\mathbb{F}_{q}$-vector space $A$. Assume that Assumptions 1 and 2 of
+Theorem \ref{thm.F.gW-general} are satisfied.
 
 For every $P\in N$, define an endomorphism $\psi_{P}$ of the $\mathbb{F}_{q}%
 $-vector space $A$ by%
@@ -6696,9 +6698,9 @@ The polynomial $P$ is monic (since $P\in N$). We have $\pi\in
 \operatorname*{PF}P$. Thus, $\pi$ is a monic irreducible divisor of $P$.
 Hence, $P/\pi$ is a monic polynomial in $\mathbb{F}_{q}\left[  T\right]  $
 (since $P$ and $\pi$ are monic). Since $N$ is a $q$-nest, we obtain $P/\pi\in
-N$ (since $P\in N$, and since $P/\pi$ is a monic divisor of $N$). Since $N$ is
+N$ (since $P\in N$, and since $P/\pi$ is a monic divisor of $P$). Since $N$ is
 a $q$-nest, we also obtain $\pi\in N$ (since $P\in N$, and since $\pi$ is a
-monic divisor of $N$).
+monic divisor of $P$).
 
 Assumption 1 (applied to $\pi$ instead of $P$) shows that $\varphi_{\pi}$ is
 an endomorphism of the $\mathcal{F}$-module $A$.
@@ -6971,7 +6973,7 @@ function, whereas the functions $\varphi_{C}$ and $\varphi$ are two distinct
 analogues of the Euler totient function. These functions have a number of
 properties (some well-known) that often imitate analogous properties of the
 number-theoretical M\"{o}bius function and the Euler totient function. See
-\cite[Theorem 4.5]{kc-carlitz} for some properties of $\varphi_{C}$, and see
+\cite[Theorem 4.6]{kc-carlitz} for some properties of $\varphi_{C}$, and see
 \cite[Section 6]{kc-carlitz} for the function $\varphi$. We shall prove a
 number of their properties, many of which will be used below. We begin by
 citing a well-known combinatorial fact:
@@ -7263,8 +7265,8 @@ I}P_{i}}\\
 I}\dfrac{-1}{P_{i}}}=M\underbrace{\sum_{I\subseteq\left\{  1,2,\ldots
 ,k\right\}  }\prod_{i\in I}\dfrac{-1}{P_{i}}}_{\substack{=\prod_{i\in\left\{
 1,2,\ldots,k\right\}  }\left(  1+\dfrac{-1}{P_{i}}\right)  \\\text{(by Lemma
-\ref{lem.moebius-Q.Z} \textbf{(b)}, applied to }R=\mathbb{F}_{q}\left[
-T\right]  \text{,}\\Z=\left\{  1,2,\ldots,k\right\}  \text{ and }r_{i}%
+\ref{lem.moebius-Q.Z} \textbf{(b)}, applied to }R=\mathbb{F}_{q}\left(
+T\right)  \text{,}\\Z=\left\{  1,2,\ldots,k\right\}  \text{ and }r_{i}%
 =\dfrac{-1}{P_{i}}\text{)}}}\\
 &  =M\prod_{i\in\left\{  1,2,\ldots,k\right\}  }\left(  1+\dfrac{-1}{P_{i}%
 }\right)  =M\prod_{\pi\in\operatorname*{PF}M}\underbrace{\left(  1+\dfrac
@@ -7318,7 +7320,7 @@ we obtain $\varphi_{C}\left(  M\right)  =\sum_{D\mid M}D\mu\left(  \dfrac
 $M=\sum\limits_{D\mid M}\varphi_{C}\left(  D\right)  $.
 \end{proposition}
 
-Proposition \ref{prop.phiC-Q.sum} is \cite[Theorem 4.5 (2)]{kc-carlitz}, but
+Proposition \ref{prop.phiC-Q.sum} is \cite[Theorem 4.6 (2)]{kc-carlitz}, but
 let me nevertheless give an independent proof of it:
 
 \begin{proof}
@@ -7442,12 +7444,13 @@ Proposition \ref{prop.moebius-Q.sum}.)
 
 Furthermore, every subset $I$ of $\left\{  1,2,\ldots,k\right\}  $ satisfies%
 \begin{align}
-q^{\deg\left(  M/\prod_{i\in I}P_{i}\right)  }  &  =q^{\deg M-\sum_{i\in
-I}\deg\left(  P_{i}\right)  }\ \ \ \ \ \ \ \ \ \ \left(  \text{since }%
-\deg\left(  M/\prod_{i\in I}P_{i}\right)  =\deg M-\sum_{i\in I}\deg\left(
-P_{i}\right)  \right) \nonumber\\
-&  =\dfrac{q^{\deg M}}{\prod_{i\in I}q^{\deg\left(  P_{i}\right)  }}.
-\label{pf.prop.phi-Q.formula.b.qdeg}%
+&  q^{\deg\left(  M/\prod_{i\in I}P_{i}\right)  }\nonumber\\
+&  =q^{\deg M-\sum_{i\in I}\deg\left(  P_{i}\right)  }%
+\ \ \ \ \ \ \ \ \ \ \left(  \text{since }\deg\left(  M/\prod_{i\in I}%
+P_{i}\right)  =\deg M-\sum_{i\in I}\deg\left(  P_{i}\right)  \right)
+\nonumber\\
+&  =\dfrac{q^{\deg M}}{\prod_{i\in I}q^{\deg\left(  P_{i}\right)  }%
+}.\label{pf.prop.phi-Q.formula.b.qdeg}%
 \end{align}
 
 
@@ -7718,9 +7721,9 @@ A/\left(  \prod\limits_{s\in\operatorname*{PF}M}I_{s}\right)  \rightarrow
 ,\ \ \ \ \ \ \ \ \ \ a+\prod\limits_{s\in\operatorname*{PF}M}I_{s}%
 \mapsto\left(  a+I_{s}\right)  _{s\in\operatorname*{PF}M}%
 \]
-is well-defined and an $A$-algebra isomorphism. Hence, $A/\left(
-\prod\limits_{s\in\operatorname*{PF}M}I_{s}\right)  \cong\prod\limits_{s\in
-\operatorname*{PF}M}\left(  A/I_{s}\right)  $ as $A$-algebras.
+is well-defined and an $A$-algebra isomorphism. Hence, we have shown that
+$A/\left(  \prod\limits_{s\in\operatorname*{PF}M}I_{s}\right)  \cong%
+\prod\limits_{s\in\operatorname*{PF}M}\left(  A/I_{s}\right)  $ as $A$-algebras.
 
 But
 \[
@@ -7947,7 +7950,7 @@ Before we prove Theorem \ref{thm.F.gW}, let us show two more general facts:
 \label{lem.F.gW.F-G-gen0}Let $N$ be a $q$-nest. Let $A$ be an $\mathbb{F}%
 _{q}\left[  T\right]  $-module. For every $P\in N$ and every monic divisor $D$
 of $P$, let $g_{P,D}$ be an element of $A$. Let $\alpha$, $\beta$ and $\gamma$
-are three maps from $N$ to $\mathbb{F}_{q}\left[  T\right]  $.
+be three maps from $N$ to $\mathbb{F}_{q}\left[  T\right]  $.
 
 Assume that
 \begin{equation}
@@ -8110,9 +8113,9 @@ Now,%
 &  =\sum_{\substack{M\mid P;\\ME\mid P}}\underbrace{\beta\left(  M\right)
 }_{\substack{=\sum_{D\mid M}D\gamma\left(  D\right)  \alpha\left(  \dfrac
 {M}{D}\right)  \\\text{(by (\ref{eq.lem.F.gW.F-gen0.beta-through-alpha})
-(applied}\\\text{to }M\text{ instead of }P\text{))}}}g_{P,ME}%
-\ \ \ \ \ \ \ \ \ \ \left(  \text{here, we have renamed the summation index
-}D\text{ as }M\right) \\
+(applied}\\\text{to }M\text{ instead of }P\text{))}}}g_{P,ME}\\
+&  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left(  \text{here, we have renamed
+the summation index }D\text{ as }M\right)  \\
 &  =\sum_{\substack{M\mid P;\\ME\mid P}}\underbrace{\sum_{D\mid M}%
 }_{\substack{=\sum_{\substack{D\mid P;\\D\mid M}}\\\text{(since every monic
 divisor }D\text{ of }M\\\text{is also a monic divisor of }P\text{ (since
@@ -8375,9 +8378,9 @@ $\left(  z_{P}\right)  _{P\in N}\in A^{N}$ of elements of $A$ such that%
 \end{statement}
 
 Assertion $\mathcal{D}_{2}^{\prime}$ is obtained from Assertion $\mathcal{D}%
-_{2}$ by renaming the family $\left(  x_{P}\right)  _{P\in N}$ as $\left(
-z_{P}\right)  _{P\in N}$. Hence, we have the equivalence $\mathcal{D}%
-_{2}\Longleftrightarrow\mathcal{D}_{2}^{\prime}$.
+_{2}$ by renaming the family $\left(  \widetilde{x}_{P}\right)  _{P\in N}$ as
+$\left(  z_{P}\right)  _{P\in N}$. Hence, we have the equivalence
+$\mathcal{D}_{2}\Longleftrightarrow\mathcal{D}_{2}^{\prime}$.
 
 But every $P\in N$ and every monic divisor $D$ of $P$ satisfy%
 \[
@@ -8552,7 +8555,7 @@ E=P\right]  \\\text{(by Corollary \ref{cor.moebius-Q.sum-rel},}\\\text{applied
 to }M=P\text{)}}}E\varphi_{P/E}\left(  y_{E}\right) \\
 &  =\sum_{E\mid P}\left[  E=P\right]  E\varphi_{P/E}\left(  y_{E}\right) \\
 &  =\underbrace{\left[  P=P\right]  }_{=1}P\underbrace{\varphi_{P/P}%
-}_{\substack{=\operatorname*{id}\\\text{(by Assumption 1)}}}\left(
+}_{\substack{=\operatorname*{id}\\\text{(by Assumption 3)}}}\left(
 y_{P}\right)  +\sum_{\substack{E\mid P;\\E\neq P}}\underbrace{\left[
 E=P\right]  }_{\substack{=0\\\text{(since }E\neq P\text{)}}}E\varphi
 _{P/E}\left(  y_{E}\right) \\
@@ -8896,8 +8899,8 @@ _{1}\Longrightarrow\mathcal{L}$.
 $\textit{:} Assume that Assertion $\mathcal{L}$ holds. That is, every $P\in N$
 and every monic divisor $E$ of $P$ satisfy%
 \begin{equation}
-E\sum_{\substack{D\mid P;\\DE\mid P}}\mu\left(  D\right)  g_{P,DE}\in
-PA.\label{pf.thm.F.gW.LtoF.ass}%
+E\sum_{\substack{D\mid P;\\DE\mid P}}\mu\left(  D\right)  g_{P,DE}\in PA.
+\label{pf.thm.F.gW.LtoF.ass}%
 \end{equation}
 
 
@@ -9334,7 +9337,7 @@ $P$) yields $b_{P/\pi}=Q$. But $\varphi_{\pi}=\operatorname*{id}$ (by the
 definition of $\varphi_{\pi}$), and thus%
 \begin{equation}
 \varphi_{\pi}\left(  b_{P/\pi}\right)  =\operatorname*{id}\left(  b_{P/\pi
-}\right)  =b_{P/\pi}=Q.\label{pf.prop.F.gW.example1.d.1}%
+}\right)  =b_{P/\pi}=Q. \label{pf.prop.F.gW.example1.d.1}%
 \end{equation}
 
 
@@ -10034,11 +10037,12 @@ substituting $p_{\pi}=\left(  \operatorname*{Carl}\pi\right)  x_{1}+\pi
 x_{\pi}$, we get%
 \[
 \left(  \left(  \operatorname*{Carl}\pi\right)  x_{1}+\pi x_{\pi}\right)
-T=T\left(  \left(  \operatorname*{Carl}\pi\right)  x_{1}+\pi x_{\pi}\right)  .
+T=T\left(  \left(  \operatorname*{Carl}\pi\right)  x_{1}+\pi x_{\pi}\right)
+.
 \]
 Subtracting $\left(  \operatorname*{Carl}\pi\right)  x_{1}T$ from here, we get%
 \begin{align*}
-\pi x_{\pi}T &  =T\left(  \left(  \operatorname*{Carl}\pi\right)  x_{1}+\pi
+\pi x_{\pi}T  &  =T\left(  \left(  \operatorname*{Carl}\pi\right)  x_{1}+\pi
 x_{\pi}\right)  -\left(  \operatorname*{Carl}\pi\right)  x_{1}T\\
 &  =T\left(  \operatorname*{Carl}\pi\right)  x_{1}+T\pi x_{\pi}-\left(
 \operatorname*{Carl}\pi\right)  \underbrace{x_{1}T}_{\substack{=Tx_{1}%
@@ -10052,17 +10056,17 @@ Thus, $\left[  T,\operatorname*{Carl}\pi\right]  $ must lie in $\pi
 Well, the fact that $\left[  T,\operatorname*{Carl}\pi\right]  $ lies in
 $\pi\mathcal{F}$ is easily derived from (\ref{carl.pi}), but there seems to be
 no way to write the quotient in finite terms. Let us rather introduce a
-notation for it: Let $\eth _{T}\left(  \pi\right)  $ denote the (unique)
+notation for it: Let $\eth_{T}\left(  \pi\right)  $ denote the (unique)
 $f\in\mathcal{F}$ satisfying $\left[  T,\operatorname*{Carl}\pi\right]  =\pi
 f$ (for $\pi$ irreducible monic). In more elementary (and commutative) terms,
-$\eth _{T}\left(  \pi\right)  =\dfrac{T\left[  \pi\right]  \left(  X\right)
+$\eth_{T}\left(  \pi\right)  =\dfrac{T\left[  \pi\right]  \left(  X\right)
 -\left[  \pi\right]  \left(  TX\right)  }{\pi}$. Now,%
 \[
 \pi x_{\pi}T=\underbrace{T\pi}_{=\pi T}x_{\pi}+\underbrace{\left[
-T,\operatorname*{Carl}\pi\right]  }_{=\pi\eth _{T}\left(  \pi\right)  }%
-x_{1}=\pi Tx_{\pi}+\pi\eth _{T}\left(  \pi\right)  x_{1}.
+T,\operatorname*{Carl}\pi\right]  }_{=\pi\eth_{T}\left(  \pi\right)  }%
+x_{1}=\pi Tx_{\pi}+\pi\eth_{T}\left(  \pi\right)  x_{1}.
 \]
-Cancelling $\pi$, we obtain \fbox{$x_{\pi}T=Tx_{\pi}+\eth _{T}\left(
+Cancelling $\pi$, we obtain \fbox{$x_{\pi}T=Tx_{\pi}+\eth_{T}\left(
 \pi\right)  x_{1}$}.
 
 The question is: Do we get $x_{\pi}F$ explicitly using $\eth_{T}\left(
@@ -10109,16 +10113,16 @@ Here is my result on the logarithm series, which so far has not found any applic
 \begin{theorem}
 \label{thm.carlitzlog}Let $q$ be a prime power. Consider the Carlitz logarithm
 $\log_{C}\in\mathbb{F}_{q}\left(  T\right)  \left[  \left[  X\right]  \right]
-$ defined in \cite[Section 7]{kc-carlitz} (but with $q$ instead of $p$). Then,
+$ defined in \cite[Section 8]{kc-carlitz} (but with $q$ instead of $p$). Then,
 in the power series ring $\mathbb{F}_{q}\left(  T\right)  \left[  \left[
 X,S\right]  \right]  $, we have%
 \begin{equation}
 \log_{C}\left(  SX\right)  =\sum\limits_{N\in\mathbb{F}_{q}\left[  T\right]
-_{+}}\left(  -1\right)  ^{\deg N}S^{q^{\deg N}}\dfrac{\left[  N\right]
-\left(  X\right)  }{N}. \label{thm.carlitzlog.1}%
+_{+}}S^{q^{\deg N}}\dfrac{\left[  N\right]  \left(  X\right)  }{N}.
+\label{thm.carlitzlog.1}%
 \end{equation}
 (The right hand side of this converges in the usual topology on $\mathbb{F}%
-_{q}\left[  \left[  X,S\right]  \right]  $.)
+_{q}\left(  T\right)  \left[  \left[  X,S\right]  \right]  $.)
 \end{theorem}
 
 Let us recall the definition of $\log_{C}$ for the sake of completeness: For
@@ -10209,7 +10213,7 @@ subspace of $L$. Let $t\in L\setminus V$. Then,%
 \textit{Proof of Proposition \ref{prop.carlitzlog.lem2} (sketched).} Let $W$
 be the polynomial $\prod\limits_{v\in V}\left(  X+v\right)  \in L\left[
 X\right]  $. This polynomial is a $q$-polynomial (indeed, Theorem
-\ref{thm.mac1.subspace} (applied to $L=A$) shows that $f_{V}$ is a
+\ref{thm.mac1.subspace} (applied to $A=L$) shows that $f_{V}$ is a
 $q$-polynomial, but clearly $f_{V}=W$); hence, its derivative equals its
 coefficient in front of $X^{1}$ (because the derivative of any $q$-polynomial
 in characteristic $p\mid q$ equals its coefficient in front of $X^{1}$). But
@@ -10254,15 +10258,15 @@ Rename the index $w$ as $v$ and obtain the claim of Proposition
 \]
 Hence, it is clearly enough to show that every $m\in\mathbb{N}$ satisfies%
 \begin{equation}
-\dfrac{X^{q^{m}}}{L_{m}}=\sum\limits_{\substack{N\in\mathbb{F}_{q}\left[
-T\right]  _{+};\\\deg N=m}}\dfrac{\left[  N\right]  \left(  X\right)  }{N}.
-\label{pf.carlitzlog.1}%
+\left(  -1\right)  ^{m}\dfrac{X^{q^{m}}}{L_{m}}=\sum\limits_{\substack{N\in
+\mathbb{F}_{q}\left[  T\right]  _{+};\\\deg N=m}}\dfrac{\left[  N\right]
+\left(  X\right)  }{N}. \label{pf.carlitzlog.1}%
 \end{equation}
 
 
 So let $m\in\mathbb{N}$. Introduce the polynomials $E_{j}\left(  Y\right)
 \in\mathbb{F}_{q}\left(  T\right)  \left[  Y\right]  $ for all $j\in
-\mathbb{N}$ as in \cite[Section 7]{kc-carlitz}, but with $q$ instead of $p$.
+\mathbb{N}$ as in \cite[Section 8]{kc-carlitz}, but with $q$ instead of $p$.
 Let's spell out their definition: With $e_{C}$ denoting the Carlitz
 exponential, the power series $e_{C}\left(  Y\log_{C}X\right)  \in
 \mathbb{F}_{q}\left(  T\right)  \left[  \left[  X,Y\right]  \right]  $ is a
@@ -10276,20 +10280,20 @@ a $q$-polynomial in $\mathbb{F}_{q}\left(  T\right)  \left[  Y\right]  $.
 Moreover, $\deg\left(  E_{j}\right)  =q^{j}$ and $E_{j}\left(  0\right)  =0$
 for all $j\in\mathbb{N}$. Furthermore, $E_{j}\left(  M\right)  =0$ for every
 $M\in\mathbb{F}_{q}\left[  T\right]  $ satisfying $\deg M<j$. Finally,
-$E_{j}\left(  M\right)  =1$ for every $M\in\mathbb{F}_{q}\left[  T\right]  $
-satisfying $\deg M=j$. But most importantly, $\left[  M\right]  \left(
-X\right)  =\sum\limits_{j\in\mathbb{N}}E_{j}\left(  M\right)  X^{q^{j}}$ in
-$\mathbb{F}_{q}\left(  T\right)  \left[  X\right]  $ for every $M\in
-\mathbb{F}_{q}\left[  T\right]  $. Hence, for every nonzero $M\in
-\mathbb{F}_{q}\left(  T\right)  \left[  X\right]  $, we have%
+$E_{j}\left(  M\right)  =1$ for every monic $M\in\mathbb{F}_{q}\left[
+T\right]  $ satisfying $\deg M=j$. But most importantly, $\left[  M\right]
+\left(  X\right)  =\sum\limits_{j\in\mathbb{N}}E_{j}\left(  M\right)
+X^{q^{j}}$ in $\mathbb{F}_{q}\left(  T\right)  \left[  X\right]  $ for every
+$M\in\mathbb{F}_{q}\left[  T\right]  $. Hence, for every monic $M\in
+\mathbb{F}_{q}\left[  T\right]  $, we have%
 \begin{align}
 \dfrac{\left[  M\right]  \left(  X\right)  }{M}  &  =\dfrac{\sum
 \limits_{j\in\mathbb{N}}E_{j}\left(  M\right)  X^{q^{j}}}{M}=\sum
 \limits_{j\in\mathbb{N}}\dfrac{E_{j}\left(  M\right)  }{M}X^{q^{j}}%
 =\sum\limits_{j=0}^{\deg M}\dfrac{E_{j}\left(  M\right)  }{M}X^{q^{j}%
 }\nonumber\\
-&  \ \ \ \ \ \ \ \ \ \ \left(  \text{since }E_{j}\left(  M\right)  =0\text{
-whenever }\deg M<j\right) \nonumber\\
+&  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left(  \text{since }E_{j}\left(
+M\right)  =0\text{ whenever }\deg M<j\right) \nonumber\\
 &  =\sum\limits_{j=0}^{\deg M-1}\dfrac{E_{j}\left(  M\right)  }{M}X^{q^{j}%
 }+\underbrace{\dfrac{E_{\deg M}\left(  M\right)  }{M}}_{\substack{=\dfrac
 {1}{M}\\\text{(since }E_{j}\left(  M\right)  =1\text{ whenever }\deg
@@ -10317,7 +10321,7 @@ T^{1}+...+\lambda_{m}T^{m-1}+T^{m}}=0
 \]
 (since $j<m$ and thus $q^{j}-1<q^{m}-1$). Since the sums of the form
 $\lambda_{1}T^{0}+\lambda_{2}T^{1}+...+\lambda_{m}T^{m-1}+T^{m}$ with $\left(
-\lambda_{1},\lambda_{2},...,\lambda_{m}\right)  \in\mathbb{F}_{q}$ are
+\lambda_{1},\lambda_{2},...,\lambda_{m}\right)  \in\mathbb{F}_{q}^{m}$ are
 precisely the monic polynomials in $\mathbb{F}_{q}\left[  T\right]  $ with
 degree $m$ (each appearing exactly once), this rewrites as%
 \begin{equation}
@@ -10334,7 +10338,7 @@ N=m}}\dfrac{\left[  N\right]  \left(  X\right)  }{N}\\
 &  =\sum\limits_{\substack{N\in\mathbb{F}_{q}\left[  T\right]  _{+};\\\deg
 N=m}}\left(  \sum\limits_{j=0}^{\deg N-1}\dfrac{E_{j}\left(  N\right)  }%
 {N}X^{q^{j}}+\dfrac{1}{N}X^{q^{\deg N}}\right) \\
-&  \ \ \ \ \ \ \ \ \ \ \left(  \text{here we applied
+&  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left(  \text{here we applied
 (\ref{pf.carlitzlog.lem2.5}) to }M=N\right) \\
 &  =\sum\limits_{j=0}^{m-1}\underbrace{\sum\limits_{\substack{N\in
 \mathbb{F}_{q}\left[  T\right]  _{+};\\\deg N=m}}\dfrac{E_{j}\left(  N\right)
@@ -10370,9 +10374,9 @@ v<m\right\}
 &  =\underbrace{\left(  \prod\limits_{\substack{N\in\mathbb{F}_{q}\left[
 T\right]  _{+};\\\deg N=m}}\dfrac{1}{N}\right)  \cdot\left(  \prod
 \limits_{\substack{v\in\mathbb{F}_{q}\left[  T\right]  ;\\\deg v<m;\\v\neq
-0}}v\right)  }_{\substack{=\dfrac{1}{L_{m}}\\\text{(this is relatively
-straightforward to prove}\\\text{using standard results on finite fields)}%
-}}X^{q^{m}}=\dfrac{X^{q^{m}}}{L_{m}}.
+0}}v\right)  }_{\substack{=\dfrac{\left(  -1\right)  ^{m}}{L_{m}}\\\text{(this
+is relatively straightforward to prove}\\\text{using standard results on
+finite fields)}}}X^{q^{m}}=\left(  -1\right)  ^{m}\dfrac{X^{q^{m}}}{L_{m}}.
 \end{align*}
 This proves (\ref{pf.carlitzlog.1}) and thus Theorem \ref{thm.carlitzlog}.
 
@@ -10436,7 +10440,7 @@ f$\textit{\textquotedblright)}. \url{http://math.stackexchange.com/q/1824797}
 
 \bibitem {jacobson-rl}Nathan Jacobson, \textit{Restricted Lie algebras of
 characteristic }$p$, Trans. Amer. Math. Soc. \textbf{50} (1941), pp.
-15--25.\newline\url{http://www.ams.org/journals/tran/1941-050-01/S0002-9947-1941-0005118-0/home.html}
+15--25.\newline\url{https://doi.org/10.1090/S0002-9947-1941-0005118-0}
 
 \bibitem {mac-schurvar}I. G. Macdonald, \textit{Schur functions: Theme and
 variations}, S\'{e}minaire Lotharingien de Combinatoire 28, B28a
@@ -10446,18 +10450,20 @@ variations}, S\'{e}minaire Lotharingien de Combinatoire 28, B28a
 unofficial errata.
 
 \bibitem {ore-pp1}Oystein Ore, \textit{On a Special Class of Polynomials},
-Trans. Amer. Math. Soc. \textbf{35} (1933), pp. 559--584.\newline\url{http://www.ams.org/journals/tran/1933-035-03/S0002-9947-1933-1501703-0/}
+Trans. Amer. Math. Soc. \textbf{35} (1933), pp. 559--584.\newline\url{https://doi.org/10.1090/S0002-9947-1933-1501703-0}
 
 \bibitem {ore-pp2}Oystein Ore, \textit{Errata in my paper: \textquotedblleft
 On a special class of polynomials\textquotedblright\ [Trans. Amer. Math. Soc.
 35 (1933), no. 3, 559-584; 1501703]}, Trans. Amer. Math. Soc. \textbf{36}
-(1934), p. 275.\newline\url{http://www.ams.org/journals/tran/1934-036-02/S0002-9947-1934-1501741-9/}
+(1934), p. 275.\newline\url{https://doi.org/10.1090/S0002-9947-1934-1501741-9}
 
 \bibitem {rabinoff-witt}Joseph Rabinoff, \textit{The Theory of Witt
 Vectors}.\newline\url{https://arxiv.org/abs/1409.7445v1}
 
 \bibitem {stanley-ec2}Richard Stanley, \textit{Enumerative Combinatorics,
-volume 2}, Cambridge University Press, 2nd edition 2024.
+volume 2}, Cambridge University Press, 2nd edition 2024.\newline%
+\url{https://doi.org/10.1017/9781009262538} \newline See
+\url{https://math.mit.edu/~rstan/ec/} for errata and addenda.
 \end{thebibliography}
 
 
